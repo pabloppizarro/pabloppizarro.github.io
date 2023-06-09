@@ -1,0 +1,172 @@
+:root {
+    /* CSS VARIABLE  */
+    --font-size: 1.3rem;
+    --white: white;
+    --blue-white: #f1f3f9;
+    --yellow: #ffc857;
+    --blue-light: #757da9;
+    --blue: #3f4464;
+    --blue-dark: #1f2232;
+
+    --acari-sans-regular: "AcariSansNeueRegular", sans-serif;
+    --acari-sans-light: "AcariSansNeueLight", sans-serif;
+    --acari-sans-extra-light: "AcariSansNeueExtraLight", sans-serif;
+    --acari-sans-extra-bold: "AcariSansNeueBold", sans-serif;
+}
+
+html {
+    font-weight: normal;
+    font-style: normal;
+    box-sizing: border-box;
+}
+/*UNIVERSAL SELECTOR, applies to every items on web, but he loses about specificity against a html element selector*/
+/*Is very is easy to override*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    /* How to use vars in css*/
+    font-family: var(--acari-sans-regular);
+    background-color: var(--blue-dark);
+    color: var(--blue-white);
+    font-size: var(--font-size);
+}
+/*Margins vertical collapse, dont add, 1rem + 1rem = 1rem margin*/
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+a {
+    color: var(--yellow);
+}
+a:hover {
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--acari-sans-extra-bold);
+}
+
+/*navbar */
+nav {
+    font-family: var(--acari-sans-regular);
+    /*this % in fontsize helps to scale fonts when you have differents font elementes like "h1" and 'a' or 'p', it will reduce fontsize depends on native size.*/
+    font-size: 80%;
+    padding: 1rem;
+}
+nav h1 a {
+    font-family: var(--acari-sans-extra-light);
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+/*this searchs for values in attributes for this element, in this case is a 'class'*/
+nav [class*="fa-"] {
+    font-size: 125%;
+    color: var(--yellow);
+}
+nav a {
+    color: var(--blue-white);
+    text-decoration: none;
+    display: block;
+}
+nav a:hover,
+nav [class*="fa-"]:hover {
+    color: var(--white);
+    font-weight: bold;
+}
+
+nav .button {
+    background-color: var(--yellow);
+    color: var(--blue);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+nav .button:hover {
+    color: var(--blue-dark);
+    background-color: var(--white);
+}
+
+/*intro styles*/
+
+#intro {
+    padding-bottom: 10rem;
+}
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5; /*absolute valie, proportionaly from font-size rem choosen*/
+}
+#intro .name {
+    font-family: var(--acari-sans-extra-light);
+}
+.name span {
+    font-family: var(--acari-sans-regular);
+    font-size: 4rem;
+    display: block;
+    color: var(--yellow);
+}
+
+#intro h2 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+/*my approach*/
+#contact {
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+    padding: 3rem 0;
+}
+/*Jen's approach*/
+/*Same as mee YEY!!, but she added the next line*/
+#contact p:last-child {
+    margin-top: 3rem;
+}
+
+footer {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+}
+footer ul {
+    margin: 2rem 0;
+    padding: 0;
+    gap: 3rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer [class*="fa"] {
+    font-size: 200%;
+}
+
+@media (min-width: 850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+}
