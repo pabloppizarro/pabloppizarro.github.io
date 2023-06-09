@@ -1,0 +1,48 @@
+:root {
+    /* CSS VARIABLE  */
+    --white: #ffffff;
+    --font-size: 1.3rem;
+    --yellow: #ffe700;
+    --orange: #f59e0b;
+    --violet: #9900ff;
+    --dark-violet: #00144a;
+    --acari-sans-regular: "AcariSansNeueRegular", sans-serif;
+}
+
+html {
+    font-weight: normal;
+    font-style: normal;
+    box-sizing: border-box;
+}
+/*UNIVERSAL SELECTOR, applies to every items on web, but he loses about specificity against a html element selector*/
+/*Is very is easy to override*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    /* How to use vars in css*/
+    font-family: var(--acari-sans-regular);
+    background-color: var(--dark-violet);
+    color: var(--white);
+    font-size: var(--font-size);
+}
+/*Margins vertical collapse, dont add, 1rem + 1rem = 1rem margin*/
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+a {
+    color: var(--orange);
+}
+a:hover {
+    color: var(--yellow);
+    text-decoration: none;
+}
+section {
+}
