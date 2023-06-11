@@ -255,7 +255,7 @@ footer [class*="fa"] {
     }
     /*GRID PUEDE HACER OVERLAP DE ELEMENTS  Y TRABAJA EN 2 DIMENSIONES, FLEXBOX NO PUEDE HACER OVERLAP, SOLO PUEDE JUNTAR Y DEJAR PEGADOS ELEMENTOS*/
 
-    article {
+    #projects article {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         gap: 1rem;
@@ -288,6 +288,29 @@ footer [class*="fa"] {
     #projects .reverse img {
         grid-column: 6/11;
         grid-row: 1/2;
+    }
+    #about {
+        text-align: center;
+        width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 0 4rem 0;
+    }
+
+    #about img {
+        max-width: 300px;
+        border-radius: 1rem;
+    }
+
+    #about ul {
+        padding: 0;
+        margin: 1rem 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1rem;
+        font-family: var(--acari-sans-extra-light);
     }
 }
 
