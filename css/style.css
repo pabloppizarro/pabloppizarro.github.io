@@ -93,6 +93,27 @@ nav h1 [class*="fa-"] {
     font-size: 100%;
     margin-right: 1rem;
 }
+nav h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-cropper {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+
+nav h1 img {
+    display: inline;
+    margin: 0 auto;
+    height: 110%;
+    object-fit: cover;
+}
 nav ul {
     display: flex;
     list-style-type: none;
