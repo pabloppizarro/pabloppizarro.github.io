@@ -1,5 +1,3 @@
-console.log("Hi Wordle People");
-
 const GET_API_URL = "https://words.dev-apis.com/word-of-the-day";
 const POST_API_URL = "https://words.dev-apis.com/validate-word";
 const ANSWER_LENGTH = 5;
@@ -30,14 +28,12 @@ fetchWordleWordOfTheDay();
 async function fetchWordleWordOfTheDay() {
     showStatusText("LOADING");
     const response = await fetch(GET_API_URL).then((res) => res.json());
-    // console.log("WORD OF THE DAY -> ", response);
     wordOfTheDay = response.word.toUpperCase();
     wordsOfTheDayParts = wordOfTheDay.split("");
     showStatusText("READY");
 }
 
 function pressKeyHandler(event) {
-    // console.log(event.key);
     if (done) return;
     if (isLetter(event.key)) {
         handleLetter(event.key.toUpperCase());

@@ -86,7 +86,6 @@ function doMath(operator) {
     } else {
         flushOperation(numberBuffer);
     }
-    console.log(runningTotal);
     lastOperator = operator;
     buffer = "0";
 }
