@@ -16,6 +16,11 @@ body {
     justify-content: center;
     align-items: center;
     /* min-height: 25px; */
+    font-size: 1rem;
+}
+i {
+    font-size: 1rem;
+    padding: 0rem 1rem;
 }
 .status-text {
     margin: 0;

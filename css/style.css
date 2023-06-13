@@ -301,6 +301,15 @@ footer [class*="fa"] {
     padding: 2rem;
 }
 
+.wordle .article-content {
+    background-color: var(--blue-white);
+    color: black;
+    border-radius: 1rem;
+}
+.status i {
+    font-size: 1rem;
+}
+
 @media (min-width: 800px) {
     nav {
         max-width: 1200px;
