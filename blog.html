@@ -12,11 +12,8 @@
             content="Front End, Web Developer, HTML5, CSS, JavaScript, Angular"
         />
         <meta name="author" content="Pablo Pizarro" />
-        <title>Pablo Pizarro | About me</title>
-        <meta
-            property="og:title"
-            content="Pablo Pizarro | Front end Web Developer"
-        />
+        <title>Pablo Pizarro | Blog</title>
+        <meta property="og:title" content="Pablo Pizarro | Blog" />
         <meta
             property="og:image"
             content="https://res.cloudinary.com/gamehard/image/upload/f_auto,q_auto/uth3arud3tpcmhygkydo"
@@ -45,6 +42,7 @@
             href="https://fontlibrary.org//face/acari-sans-neue"
             type="text/css"
         />
+        <link rel="stylesheet" href="calculator/calculator.css" />
         <link rel="stylesheet" href="css/style.css" />
         <!-- Google tag (gtag.js) -->
         <script
@@ -116,41 +114,81 @@
             </ul>
         </nav>
         <!-- Sectixs is identified by id cuz you could be able to navigate to a section using #-->
-        <div class="background">
-            <section id="about">
-                <h2>Pablo Pizarro</h2>
-                <article>
-                    <img
-                        src="https://res.cloudinary.com/gamehard/image/upload/f_auto,q_auto/uth3arud3tpcmhygkydo"
-                        alt="me in a warm weekday morning"
-                    />
-                    <div class="texts">
-                        <p class="brief">
-                            I have been working in software development for 3.5 years, gaining valuable commercial experience. During this time, I have collaborated with exceptional developers and developed software solutions for companies in Argentina and Chile. Currently, I am working on full-stack projects from inception, with some already deployed to production. One of the highlights of my career was spearheading the development of an innovative VR e-learning platform that has had a significant impact on numerous companies. My true passion lies in creating remarkable solutions and providing digital advancements to the world. I constantly strive for self-improvement, balance, and inner peace.
-                        </p>
-                        <h3>Main Stack:</h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS/SCSS</li>
-                            <li>JS</li>
-                            <li>Angular 2+</li>
-                            <li>GIT</li>
-                            <li>SSR | SEO</li>
-                            <li>Responsive Dev.</li>
-                        </ul>
-                        <h3>Also some commercial experience working with:</h3>
-                        <ul>
-                            <li>NestJS | ExpressJS | NodeJs</li>
-                            <li>Integrating API 3rd party services | CDNs</li>
-                            <li>MongoDb</li>
-                            <li>MySQL</li>
-                            <li>Docker files | docker-compose</li>
-                            <li>DO Droplets | EC2 Containers</li>
-                        </ul>
+        <section id="intro">
+            <h2>
+                Here I will post some code stuffs, learning progress or just
+                some thoughts
+            </h2>
+        </section>
+        <section id="blog">
+            <article class="two-columns">
+                <div class="article-intro">
+                    <h3>
+                        Yeah, every frontend dev should code a JS calculator at
+                        least once 🙃.
+                    </h3>
+                    <p>
+                        One of my very first step on my path to learn
+                        HTML-CSS-JS.
+                    </p>
+                    <p>
+                        <a
+                            href="https://github.com/pabloppizarro/fm-intro-web-v3"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><span
+                                class="fa-brands fa-square-github"
+                                aria-hidden="true"
+                            ></span
+                            ><span class="sr-only">Github</span></a
+                        >
+                    </p>
+                </div>
+                <div class="article-content calculator">
+                    <div class="screen">
+                        <h3 class="screen-value">0</h3>
                     </div>
-                </article>
-            </section>
-        </div>
+                    <section class="calc-buttons">
+                        <div class="buttons-row">
+                            <button class="btn-calc double reset">C</button>
+                            <button class="btn-calc back">←</button>
+                            <button class="btn-calc operator">÷</button>
+                        </div>
+                        <!-- salto -->
+                        <div class="buttons-row">
+                            <button class="btn-calc number">7</button>
+                            <button class="btn-calc number">8</button>
+                            <button class="btn-calc number">9</button>
+                            <button class="btn-calc operator">×</button>
+                        </div>
+                        <!-- salto -->
+                        <div class="buttons-row">
+                            <button class="btn-calc number">4</button>
+                            <button class="btn-calc number">5</button>
+                            <button class="btn-calc number">6</button>
+                            <button class="btn-calc operator">-</button>
+                        </div>
+                        <!-- salto -->
+                        <div class="buttons-row">
+                            <button class="btn-calc number">1</button>
+                            <button class="btn-calc number">2</button>
+                            <button class="btn-calc number">3</button>
+                            <button class="btn-calc operator">+</button>
+                        </div>
+                        <!-- salto -->
+                        <div class="buttons-row">
+                            <button class="btn-calc triple number">0</button>
+                            <button class="btn-calc result">=</button>
+                        </div>
+                    </section>
+                </div>
+            </article>
+            <article>
+
+            </article>
+        </section>
+
+        <!-- COMMON SECTIONS  -->
         <div class="gradient"></div>
         <div class="section-blue">
             <section id="contact">
@@ -215,5 +253,6 @@
                 <small> &copy; 2023 Pablo Pizarro. All rights reserved.</small>
             </p>
         </footer>
+        <script type="text/javascript" src="calculator/calculator.js"></script>
     </body>
 </html>

@@ -288,6 +288,21 @@ footer [class*="fa"] {
     font-size: 200%;
 }
 
+#blog article {
+    padding: 2rem 0 4rem;
+    gap: 3rem;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.article-intro {
+    padding: 2rem;
+}
+
 @media (min-width: 800px) {
     nav {
         max-width: 1200px;
