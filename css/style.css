@@ -292,10 +292,8 @@ footer [class*="fa"] {
     padding: 2rem 0 4rem;
     gap: 3rem;
 }
-
 .two-columns {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
 }
@@ -364,6 +362,12 @@ footer [class*="fa"] {
     #about ul {
         display: flex;
         justify-content: center;
+        align-items: center;
+    }
+    .two-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
         align-items: center;
     }
 }
