@@ -45,6 +45,15 @@
       border-radius: 5px;
     }
 
+    #intro {
+      padding: 0rem;
+    }
+
+    #statement {
+      background-color: white;
+      color: black;
+    }
+
     .correct {
       background-color: lightgreen;
     }
