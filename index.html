@@ -1,342 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Pablo Pizarro | Front end Web Developer</title>
-        <meta
-            name="description"
-            content="Front End Developer. Angular 2+ | Also NodeJs, NestJs, MongoDB and MySQL. Curiosity is key. Mendoza 🍷 | ARG"
-        />
-        <meta
-            name="keywords"
-            content="Front End, Web Developer, HTML5, CSS, JavaScript, Angular"
-        />
-        <meta name="author" content="Pablo Pizarro" />
-        <meta
-            property="og:title"
-            content="Pablo Pizarro | Front end Web Developer"
-        />
-        <meta
-            property="og:image"
-            content="https://res.cloudinary.com/gamehard/image/upload/f_auto,q_auto/uth3arud3tpcmhygkydo"
-        />
-        <meta property="og:type" content="blog" />
-        <meta
-            property="og:url"
-            content="https://pabloppizarro.github.io/index.html"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
 
-        <!--  Non-Essential, But Recommended -->
-        <meta
-            property="og:description"
-            content="Front End Developer. Angular 2+ | Also NodeJs, NestJs, MongoDB and MySQL. Curiosity is key. Mendoza 🍷 | ARG"
-        />
-        <meta property="og:site_name" content="Pablo Pizarro Portfolio" />
-        <meta name="twitter:image:alt" content="Me at Mendoza downtown" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        />
-        <link
-            rel="stylesheet"
-            media="screen"
-            href="https://fontlibrary.org//face/acari-sans-neue"
-            type="text/css"
-        />
-        <link rel="stylesheet" href="css/style.css" />
-        <!-- Google tag (gtag.js) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-W1SKMZDZ0X"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pablo Pizarro | Front end Web Developer</title>
+    <meta name="description"
+        content="Front End Developer. Angular 2+ | Also NodeJs, NestJs, MongoDB and MySQL. Curiosity is key. Mendoza 🍷 | ARG" />
+    <meta name="keywords" content="Front End, Web Developer, HTML5, CSS, JavaScript, Angular" />
+    <meta name="author" content="Pablo Pizarro" />
+    <meta property="og:title" content="Pablo Pizarro | Front end Web Developer" />
+    <meta property="og:image"
+        content="https://res.cloudinary.com/gamehard/image/upload/f_auto,q_auto/uth3arud3tpcmhygkydo" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="https://pabloppizarro.github.io/index.html" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-            gtag("config", "G-W1SKMZDZ0X");
-        </script>
-    </head>
-    <body>
-        <!-- instructions in JavaScript block -->
-        <nav>
-            <ul>
-                <li>
-                    <h1>
-                        <div class="image-cropper">
-                            <img
-                                src="https://res.cloudinary.com/gamehard/image/upload/f_auto,q_auto/uth3arud3tpcmhygkydo"
-                                alt="me in a warm weekday morning"
-                            />
-                        </div>
-                        <a href="index.html"> Pablo Pizarro </a>
-                    </h1>
-                </li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li>
-                    <a
-                        href="https://www.linkedin.com/in/pablo-ppizarro/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        ><span
-                            class="fa-brands fa-linkedin"
-                            aria-hidden="true"
-                        ></span
-                        ><span class="sr-only"> LinkedIn</span></a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="https://github.com/pabloppizarro"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        ><span
-                            class="fa-brands fa-square-github"
-                            aria-hidden="true"
-                        ></span
-                        ><span class="sr-only">Github</span></a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="https://drive.google.com/file/d/1j47Jl02aH05VKIMSIKMd1CzvszJLvhE7/view?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="button"
-                        >Resume</a
-                    >
-                </li>
-            </ul>
-        </nav>
-        <!-- Sections is identified by id cuz you could be able to navigate to a section using #-->
-        <section id="intro">
-            <p class="name">Hello👋🏽, my name is <span> Pablo Pizarro </span></p>
-            <h2>
-                I'm a Front End developer from the beautiful city of Mendoza🍷,
-                Argentina.
-            </h2>
-            <p>
-                I have 3.5 years of commercial experience in web development,
-                where I have collaborated with exceptional developers and built
-                software solutions for companies in Argentina and Chile.
-            </p>
-            <p>
-                In addition, I am actively studying and enhancing my frontend
-                skills through the
-                <a
-                    href="https://frontendmasters.com/u/pablopizarro/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Frontend Masters platform</a
-                >.
-            </p>
-        </section>
-        <div class="gradient"></div>
-        <section id="projects">
-            <h2>Projects I'm proud of</h2>
-            <article>
-                <div class="text">
-                    <h4>Latest Project</h4>
-                    <h3>Gamehard Computers | Products Catalogue</h3>
-                    <p class="description">
-                        My current project, which I am currently maintaining, is
-                        a full-stack solo project for a tech retail store based
-                        in Mendoza, Argentina. The client requested a product
-                        catalog e-commerce website. For this project, I
-                        developed four microservices: a database, a backend API,
-                        a web admin panel, and a customer web client. I utilized
-                        the MEAN stack ecosystem deployed with Docker (compose)
-                        and droplets on Digital Ocean, and the front end was
-                        deployed on Netlify.
-                        <a href="https://gamehard.tech/">
-                            You can check it out here</a
-                        >
-                    </p>
-                    <h4>Technologies used include:</h4>
-                    <ul>
-                        <li>Angular | Angular Universal</li>
-                        <li>Netlify</li>
-                        <li>NestJs</li>
-                        <li>MySQL</li>
-                        <li>Docker</li>
-                        <li>Digital Ocean Droplets</li>
-                    </ul>
-                </div>
-                <img
-                    src="https://res.cloudinary.com/gamehard/image/upload/f_auto,q_auto/po7k281yfks7ijpm5fei"
-                    alt="Gamehard products page."
-                />
-            </article>
-            <article class="reverse">
-                <div class="text">
-                    <h3>GEA | Web E-learning Platform</h3>
-                    <p class="description">
-                        Smartraining is a virtual education company with over 12
-                        years of experience, specializing in virtual worlds and
-                        metaverses for educational purposes. In addition, they
-                        are established as an OTEC in Chile, authorized to use
-                        the SENCE franchise. Their flagship product is GEA, an
-                        innovative E-learning platform designed for employees of
-                        large companies throughout Chile. GEA offers a
-                        multi-experience learning environment, ranging from
-                        videos and lectures to immersive VR/AR experiences. You
-                        can learn more about our company and explore our GEA
-                        platform by visiting thier
-                        <a href="https://smartraining.io/">Website</a>.
-                    </p>
-                    <h4>Technologies used include:</h4>
-                    <ul>
-                        <li>Angular2+</li>
-                        <li>Ionic 3</li>
-                        <li>Git</li>
-                        <li>Jira | Confluence</li>
-                    </ul>
-                </div>
-                <img
-                    src="https://res.cloudinary.com/gamehard/image/upload/f_auto,q_auto/oyp931jgnxe4xhggtxxr"
-                    alt="Smartraining web page"
-                />
-            </article>
-            <article>
-                <div class="text">
-                    <h3>FollowJC GO | Mobile Location-base.</h3>
-                    <p class="description">
-                        Follow JC Go! is a location-based, multiplayer, 3D, and
-                        free-to-play game. It enables players to create their
-                        own eTeam (Evangelization Team), comprising of friends,
-                        biblical characters, saints, blesseds, and Marian
-                        advocations. The eTeam assists players in building a
-                        collection of characters who will accompany them in
-                        their daily lives and on their pilgrimage to WYD 2023 in
-                        Portugal, as well as other religious events worldwide.
-                        To achieve this, players must complete missions, search
-                        for and answer trivia questions to acquire collectibles
-                        for their eTeam, and stay connected with friends through
-                        a messaging service. Some links to check their on
-                        <a
-                            href="https://play.google.com/store/apps/details?id=com.FundacionPane.FollowJCGo2"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >Play Store</a
-                        >
-                        and
-                        <a
-                            href="https://apps.apple.com/es/app/follow-jc-go/id1435610234"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >App Store.
-                        </a>
-                        About the game in the News:
-                        <a
-                            href="https://es.ign.com/follow-jc-go/140740/news/llega-follow-jc-go-el-pokemon-go-en-el-que-buscamos-a-jesucristo"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >IGN Spain</a
-                        >,
-                        <a
-                            href="https://www.infobae.com/america/tecno/2018/10/21/llego-el-pokemon-go-catolico-y-al-papa-francisco-le-gusto/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >Infobae</a
-                        >,
-                        <a
-                            href="https://www.bbc.com/news/world-europe-45965025"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >BBC</a
-                        >
-                        and
-                        <a
-                            href="https://www.theverge.com/2018/10/24/18018446/follow-jc-go-pokemon-go-clone-vatican"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >The Verge.</a
-                        >
-                    </p>
-                    <h4>Technologies used include:</h4>
-                    <ul>
-                        <li>Unity3D Engine</li>
-                        <li>Loopback V3 | NodeJs</li>
-                        <li>Socket IO</li>
-                        <li>MongoDB</li>
-                    </ul>
-                </div>
-                <img
-                    src="https://res.cloudinary.com/gamehard/image/upload/f_auto,q_auto/cayw9oqptb5zrfgyic6e"
-                    alt="FollowJC Go gameplay"
-                />
-            </article>
-        </section>
-        <div class="gradient"></div>
-        <div class="section-blue">
-            <section id="contact">
-                <h2>Contact me</h2>
-                <p>
-                    I'm always interested in hearing about new job opportunities
-                    around the world, new projects to work with o just talk
-                    about tech.
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description"
+        content="Front End Developer. Angular 2+ | Also NodeJs, NestJs, MongoDB and MySQL. Curiosity is key. Mendoza 🍷 | ARG" />
+    <meta property="og:site_name" content="Pablo Pizarro Portfolio" />
+    <meta name="twitter:image:alt" content="Me at Mendoza downtown" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/acari-sans-neue" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1SKMZDZ0X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-W1SKMZDZ0X");
+    </script>
+</head>
+
+<body>
+    <!-- instructions in JavaScript block -->
+    <nav>
+        <ul>
+            <li>
+                <h1>
+                    <div class="image-cropper">
+                        <img src="https://res.cloudinary.com/gamehard/image/upload/f_auto,q_auto/uth3arud3tpcmhygkydo"
+                            alt="me in a warm weekday morning" />
+                    </div>
+                    <a href="index.html"> Pablo Pizarro </a>
+                </h1>
+            </li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="https://www.linkedin.com/in/pablo-ppizarro/" target="_blank" rel="noopener noreferrer" ,><span
+                        class="fa-brands fa-linkedin" aria-hidden="true"></span><span class="sr-only">
+                        LinkedIn</span></a>
+            </li>
+            <li>
+                <a href="https://github.com/pabloppizarro" target="_blank" rel="noopener noreferrer"><span
+                        class="fa-brands fa-square-github" aria-hidden="true"></span><span
+                        class="sr-only">Github</span></a>
+            </li>
+            <li>
+                <a href="https://drive.google.com/file/d/1j47Jl02aH05VKIMSIKMd1CzvszJLvhE7/view?usp=sharing"
+                    target="_blank" rel="noopener noreferrer" class="button">Resume</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Sections is identified by id cuz you could be able to navigate to a section using #-->
+    <section id="intro">
+        <p class="name">Hello👋🏽, my name is <span> Pablo Pizarro </span></p>
+        <h2>
+            I'm a Front End developer from the beautiful city of Mendoza🍷,
+            Argentina.
+        </h2>
+        <p>
+            I have 3.5 years of commercial experience in web development,
+            where I have collaborated with exceptional developers and built
+            software solutions for companies in Argentina and Chile.
+        </p>
+        <p>
+            In addition, I am actively studying and enhancing my frontend
+            skills through the
+            <a href="https://frontendmasters.com/u/pablopizarro/" target="_blank" rel="noopener noreferrer">Frontend
+                Masters platform</a>.
+        </p>
+    </section>
+    <div class="gradient"></div>
+    <section id="projects">
+        <h2>Projects I'm proud of</h2>
+        <article>
+            <div class="text">
+                <h4>Latest Project</h4>
+                <h3>Gamehard Computers | Products Catalogue</h3>
+                <p class="description">
+                    My current project, which I am currently maintaining, is
+                    a full-stack solo project for a tech retail store based
+                    in Mendoza, Argentina. The client requested a product
+                    catalog e-commerce website. For this project, I
+                    developed four microservices: a database, a backend API,
+                    a web admin panel, and a customer web client. I utilized
+                    the MEAN stack ecosystem deployed with Docker (compose)
+                    and droplets on Digital Ocean, and the front end was
+                    deployed on Netlify.
+                    <a href="https://gamehard.tech/">
+                        You can check it out here</a>
                 </p>
-                <p>
-                    <a href="mailto:pizarro.pablo@outlook.com" class="button">
-                        Email me
+                <h4>Technologies used include:</h4>
+                <ul>
+                    <li>Angular | Angular Universal</li>
+                    <li>Netlify</li>
+                    <li>NestJs</li>
+                    <li>MySQL</li>
+                    <li>Docker</li>
+                    <li>Digital Ocean Droplets</li>
+                </ul>
+            </div>
+            <img src="https://res.cloudinary.com/gamehard/image/upload/f_auto,q_auto/po7k281yfks7ijpm5fei"
+                alt="Gamehard products page." />
+        </article>
+        <article class="reverse">
+            <div class="text">
+                <h3>GEA | Web E-learning Platform</h3>
+                <p class="description">
+                    Smartraining is a virtual education company with over 12
+                    years of experience, specializing in virtual worlds and
+                    metaverses for educational purposes. In addition, they
+                    are established as an OTEC in Chile, authorized to use
+                    the SENCE franchise. Their flagship product is GEA, an
+                    innovative E-learning platform designed for employees of
+                    large companies throughout Chile. GEA offers a
+                    multi-experience learning environment, ranging from
+                    videos and lectures to immersive VR/AR experiences. You
+                    can learn more about our company and explore our GEA
+                    platform by visiting thier
+                    <a href="https://smartraining.io/">Website</a>.
+                </p>
+                <h4>Technologies used include:</h4>
+                <ul>
+                    <li>Angular2+</li>
+                    <li>Ionic 3</li>
+                    <li>Git</li>
+                    <li>Jira | Confluence</li>
+                </ul>
+            </div>
+            <img src="https://res.cloudinary.com/gamehard/image/upload/f_auto,q_auto/oyp931jgnxe4xhggtxxr"
+                alt="Smartraining web page" />
+        </article>
+        <article>
+            <div class="text">
+                <h3>FollowJC GO | Mobile Location-base.</h3>
+                <p class="description">
+                    Follow JC Go! is a location-based, multiplayer, 3D, and
+                    free-to-play game. It enables players to create their
+                    own eTeam (Evangelization Team), comprising of friends,
+                    biblical characters, saints, blesseds, and Marian
+                    advocations. The eTeam assists players in building a
+                    collection of characters who will accompany them in
+                    their daily lives and on their pilgrimage to WYD 2023 in
+                    Portugal, as well as other religious events worldwide.
+                    To achieve this, players must complete missions, search
+                    for and answer trivia questions to acquire collectibles
+                    for their eTeam, and stay connected with friends through
+                    a messaging service. Some links to check their on
+                    <a href="https://play.google.com/store/apps/details?id=com.FundacionPane.FollowJCGo2"
+                        target="_blank" rel="noopener noreferrer">Play Store</a>
+                    and
+                    <a href="https://apps.apple.com/es/app/follow-jc-go/id1435610234" target="_blank"
+                        rel="noopener noreferrer">App Store.
                     </a>
+                    About the game in the News:
+                    <a href="https://es.ign.com/follow-jc-go/140740/news/llega-follow-jc-go-el-pokemon-go-en-el-que-buscamos-a-jesucristo"
+                        target="_blank" rel="noopener noreferrer">IGN Spain</a>,
+                    <a href="https://www.infobae.com/america/tecno/2018/10/21/llego-el-pokemon-go-catolico-y-al-papa-francisco-le-gusto/"
+                        target="_blank" rel="noopener noreferrer">Infobae</a>,
+                    <a href="https://www.bbc.com/news/world-europe-45965025" target="_blank"
+                        rel="noopener noreferrer">BBC</a>
+                    and
+                    <a href="https://www.theverge.com/2018/10/24/18018446/follow-jc-go-pokemon-go-clone-vatican"
+                        target="_blank" rel="noopener noreferrer">The Verge.</a>
                 </p>
-                <p>pizarro.pablo@outlook.com</p>
-            </section>
-        </div>
-        <div class="gradient"></div>
-        <!-- instructions in JavaScript block -->
-        <footer>
-            <h3>Pablo Pizarro &middot; Front End Developer</h3>
-
-            <ul>
-                <li>
-                    <a
-                        href="https://www.linkedin.com/in/pablo-ppizarro/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        ><span
-                            class="fa-brands fa-linkedin"
-                            aria-hidden="true"
-                        ></span
-                        ><span class="sr-only"> LinkedIn</span></a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="https://github.com/pabloppizarro"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        ><span
-                            class="fa-brands fa-square-github"
-                            aria-hidden="true"
-                        ></span
-                        ><span class="sr-only">Github</span></a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="mailto:pizarro.pablo@outlook.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        ><span
-                            class="fa-solid fa-envelope"
-                            aria-hidden="true"
-                        ></span
-                        ><span class="sr-only">Email</span></a
-                    >
-                </li>
-            </ul>
+                <h4>Technologies used include:</h4>
+                <ul>
+                    <li>Unity3D Engine</li>
+                    <li>Loopback V3 | NodeJs</li>
+                    <li>Socket IO</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+            <img src="https://res.cloudinary.com/gamehard/image/upload/f_auto,q_auto/cayw9oqptb5zrfgyic6e"
+                alt="FollowJC Go gameplay" />
+        </article>
+    </section>
+    <div class="gradient"></div>
+    <div class="section-blue">
+        <section id="contact">
+            <h2>Contact me</h2>
             <p>
-                <small> &copy; 2023 Pablo Pizarro. All rights reserved.</small>
+                I'm always interested in hearing about new job opportunities
+                around the world, new projects to work with o just talk
+                about tech.
             </p>
-        </footer>
-    </body>
+            <p>
+                <a href="mailto:pizarro.pablo@outlook.com" class="button">
+                    Email me
+                </a>
+            </p>
+            <p>pizarro.pablo@outlook.com</p>
+        </section>
+    </div>
+    <div class="gradient"></div>
+    <!-- instructions in JavaScript block -->
+    <footer>
+        <h3>Pablo Pizarro &middot; Front End Developer</h3>
+
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/pablo-ppizarro/" target="_blank" rel="noopener noreferrer"><span
+                        class="fa-brands fa-linkedin" aria-hidden="true"></span><span class="sr-only">
+                        LinkedIn</span></a>
+            </li>
+            <li>
+                <a href="https://github.com/pabloppizarro" target="_blank" rel="noopener noreferrer"><span
+                        class="fa-brands fa-square-github" aria-hidden="true"></span><span
+                        class="sr-only">Github</span></a>
+            </li>
+            <li>
+                <a href="mailto:pizarro.pablo@outlook.com" target="_blank" rel="noopener noreferrer"><span
+                        class="fa-solid fa-envelope" aria-hidden="true"></span><span class="sr-only">Email</span></a>
+            </li>
+        </ul>
+        <p>
+            <small> &copy; 2023 Pablo Pizarro. All rights reserved.</small>
+        </p>
+    </footer>
+</body>
+
 </html>
