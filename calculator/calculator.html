@@ -1,52 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>My sweet Calculator</title>
-        <link rel="stylesheet" href="calculator.css" />
-    </head>
-    <body>
-        <h1 class="title">My Sweet Calculator</h1>
-        <section class="calculator">
-            <div class="screen">
-                <h3 class="screen-value">0</h3>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pablo Pizarro | Front end Web Developer</title>
+    <meta name="description"
+        content="Front End Developer. Angular 2+ | Also NodeJs, NestJs, MongoDB and MySQL. Curiosity is key. Mendoza 🍷 | ARG" />
+    <meta name="keywords" content="Front End, Web Developer, HTML5, CSS, JavaScript, Angular" />
+    <meta name="author" content="Pablo Pizarro" />
+    <meta property="og:title" content="Pablo Pizarro | Front end Web Developer" />
+    <meta property="og:image"
+        content="https://res.cloudinary.com/gamehard/image/upload/f_auto,q_auto/uth3arud3tpcmhygkydo" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="https://pabloppizarro.github.io/index.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description"
+        content="Front End Developer. Angular 2+ | Also NodeJs, NestJs, MongoDB and MySQL. Curiosity is key. Mendoza 🍷 | ARG" />
+    <meta property="og:site_name" content="Pablo Pizarro Portfolio" />
+    <meta name="twitter:image:alt" content="Me at Mendoza downtown" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/acari-sans-neue" type="text/css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1SKMZDZ0X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-W1SKMZDZ0X");
+    </script>
+    <link rel="stylesheet" href="calculator.css" />
+</head>
+
+<body>
+    <i><a href="../blog.html">Back</a></i>
+    <h1 class="title">My Sweet Calculator</h1>
+    <p>
+        One of my very first step on my path to learn
+        HTML-CSS-JS.
+    </p>
+    <p>
+        <a href="https://github.com/pabloppizarro/fm-intro-web-v3" target="_blank" rel="noopener noreferrer"><span
+                class="fa-brands fa-square-github" aria-hidden="true"></span><span class="sr-only">Github</span></a>
+    </p>
+    <section class="calculator">
+        <div class="screen">
+            <h3 class="screen-value">0</h3>
+        </div>
+        <section class="calc-buttons">
+            <div class="buttons-row">
+                <button class="btn-calc double reset">C</button>
+                <button class="btn-calc back">←</button>
+                <button class="btn-calc operator">÷</button>
             </div>
-            <section class="calc-buttons">
-                <div class="buttons-row">
-                    <button class="btn-calc double reset">C</button>
-                    <button class="btn-calc back">←</button>
-                    <button class="btn-calc operator">÷</button>
-                </div>
-                <!-- salto -->
-                <div class="buttons-row">
-                    <button class="btn-calc number">7</button>
-                    <button class="btn-calc number">8</button>
-                    <button class="btn-calc number">9</button>
-                    <button class="btn-calc operator">×</button>
-                </div>
-                <!-- salto -->
-                <div class="buttons-row">
-                    <button class="btn-calc number">4</button>
-                    <button class="btn-calc number">5</button>
-                    <button class="btn-calc number">6</button>
-                    <button class="btn-calc operator">-</button>
-                </div>
-                <!-- salto -->
-                <div class="buttons-row">
-                    <button class="btn-calc number">1</button>
-                    <button class="btn-calc number">2</button>
-                    <button class="btn-calc number">3</button>
-                    <button class="btn-calc operator">+</button>
-                </div>
-                <!-- salto -->
-                <div class="buttons-row">
-                    <button class="btn-calc triple number">0</button>
-                    <button class="btn-calc result">=</button>
-                </div>
-            </section>
+            <!-- salto -->
+            <div class="buttons-row">
+                <button class="btn-calc number">7</button>
+                <button class="btn-calc number">8</button>
+                <button class="btn-calc number">9</button>
+                <button class="btn-calc operator">×</button>
+            </div>
+            <!-- salto -->
+            <div class="buttons-row">
+                <button class="btn-calc number">4</button>
+                <button class="btn-calc number">5</button>
+                <button class="btn-calc number">6</button>
+                <button class="btn-calc operator">-</button>
+            </div>
+            <!-- salto -->
+            <div class="buttons-row">
+                <button class="btn-calc number">1</button>
+                <button class="btn-calc number">2</button>
+                <button class="btn-calc number">3</button>
+                <button class="btn-calc operator">+</button>
+            </div>
+            <!-- salto -->
+            <div class="buttons-row">
+                <button class="btn-calc triple number">0</button>
+                <button class="btn-calc result">=</button>
+            </div>
         </section>
-        <script type="text/javascript" src="calculator.js"></script>
-    </body>
+    </section>
+    <script type="text/javascript" src="calculator.js"></script>
+</body>
+
 </html>

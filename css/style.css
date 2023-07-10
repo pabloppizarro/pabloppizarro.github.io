@@ -325,6 +325,32 @@ footer [class*="fa"] {
     gap: 3rem;
 }
 
+#blog2 {
+    display: grid;
+    justify-items: center;
+    padding: 2rem 4rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+
+#blog2 article {
+
+    padding: 1rem;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    width: 80%;
+    min-height: 130px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+#blog2 article:hover {
+    z-index: 9;
+    box-shadow: 9px 15px 15px 3px rgba(0, 0, 0, 0.1);
+}
+
 .two-columns {
     display: grid;
     justify-items: center;
@@ -425,6 +451,10 @@ footer [class*="fa"] {
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         align-items: center;
+    }
+
+    #blog2 {
+        margin: 0 15%;
     }
 }
 

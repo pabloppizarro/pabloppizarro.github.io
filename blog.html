@@ -1,332 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Front End Developer. Angular 2+ | Also NodeJs, NestJs, MongoDB and MySQL. Curiosity is key. Mendoza 🍷 | ARG"
-        />
-        <meta
-            name="keywords"
-            content="Front End, Web Developer, HTML5, CSS, JavaScript, Angular"
-        />
-        <meta name="author" content="Pablo Pizarro" />
-        <title>Pablo Pizarro | Blog</title>
-        <meta property="og:title" content="Pablo Pizarro | Blog" />
-        <meta
-            property="og:image"
-            content="https://res.cloudinary.com/gamehard/image/upload/f_auto,q_auto/uth3arud3tpcmhygkydo"
-        />
-        <meta property="og:type" content="blog" />
-        <meta
-            property="og:url"
-            content="https://pabloppizarro.github.io/index.html"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
 
-        <!--  Non-Essential, But Recommended -->
-        <meta
-            property="og:description"
-            content="Front End Developer. Angular 2+ | Also NodeJs, NestJs, MongoDB and MySQL. Curiosity is key. Mendoza 🍷 | ARG"
-        />
-        <meta property="og:site_name" content="Pablo Pizarro Portfolio" />
-        <meta name="twitter:image:alt" content="Me at Mendoza downtown" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        />
-        <link
-            rel="stylesheet"
-            media="screen"
-            href="https://fontlibrary.org//face/acari-sans-neue"
-            type="text/css"
-        />
-        <link rel="stylesheet" href="wordle/wordle.css" />
-        <link rel="stylesheet" href="calculator/calculator.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <!-- Google tag (gtag.js) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-W1SKMZDZ0X"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Front End Developer. Angular 2+ | Also NodeJs, NestJs, MongoDB and MySQL. Curiosity is key. Mendoza 🍷 | ARG" />
+    <meta name="keywords" content="Front End, Web Developer, HTML5, CSS, JavaScript, Angular" />
+    <meta name="author" content="Pablo Pizarro" />
+    <title>Pablo Pizarro | Blog</title>
+    <meta property="og:title" content="Pablo Pizarro | Blog" />
+    <meta property="og:image"
+        content="https://res.cloudinary.com/gamehard/image/upload/f_auto,q_auto/uth3arud3tpcmhygkydo" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="https://pabloppizarro.github.io/index.html" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-            gtag("config", "G-W1SKMZDZ0X");
-        </script>
-    </head>
-    <body>
-        <!-- instructions in JavaScript block -->
-        <nav>
-            <ul>
-                <li>
-                    <h1>
-                        <a href="index.html"
-                            ><span
-                                class="fa-solid fa-code-compare"
-                                aria-hidden="true"
-                            ></span
-                            >Pablo Pizarro
-                        </a>
-                    </h1>
-                </li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li>
-                    <a
-                        href="https://www.linkedin.com/in/pablo-ppizarro/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        ><span
-                            class="fa-brands fa-linkedin"
-                            aria-hidden="true"
-                        ></span
-                        ><span class="sr-only"> LinkedIn</span></a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="https://github.com/pabloppizarro"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        ><span
-                            class="fa-brands fa-square-github"
-                            aria-hidden="true"
-                        ></span
-                        ><span class="sr-only">Github</span></a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="https://drive.google.com/file/d/1j47Jl02aH05VKIMSIKMd1CzvszJLvhE7/view?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="button"
-                        >Resume</a
-                    >
-                </li>
-            </ul>
-        </nav>
-        <!-- Sectixs is identified by id cuz you could be able to navigate to a section using #-->
-        <section id="intro">
-            <h2>
-                Here I will post some code stuffs, learning progress or just
-                some thoughts.
-            </h2>
-        </section>
-        <div class="gradient"></div>
-        <section id="blog" class="section-blue">
-            <article class="two-columns">
-                <div class="article-intro">
-                    <h3>
-                        Yeah, every frontend dev should code a JS calculator at
-                        least once 🙃.
-                    </h3>
-                    <p>
-                        One of my very first step on my path to learn
-                        HTML-CSS-JS.
-                    </p>
-                    <p>
-                        <a
-                            href="https://github.com/pabloppizarro/fm-intro-web-v3"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            ><span
-                                class="fa-brands fa-square-github"
-                                aria-hidden="true"
-                            ></span
-                            ><span class="sr-only">Github</span></a
-                        >
-                    </p>
-                </div>
-                <div class="article-content calculator">
-                    <div class="screen">
-                        <h3 class="screen-value">0</h3>
-                    </div>
-                    <section class="calc-buttons">
-                        <div class="buttons-row">
-                            <button class="btn-calc double reset">C</button>
-                            <button class="btn-calc back">←</button>
-                            <button class="btn-calc operator">÷</button>
-                        </div>
-                        <!-- salto -->
-                        <div class="buttons-row">
-                            <button class="btn-calc number">7</button>
-                            <button class="btn-calc number">8</button>
-                            <button class="btn-calc number">9</button>
-                            <button class="btn-calc operator">×</button>
-                        </div>
-                        <!-- salto -->
-                        <div class="buttons-row">
-                            <button class="btn-calc number">4</button>
-                            <button class="btn-calc number">5</button>
-                            <button class="btn-calc number">6</button>
-                            <button class="btn-calc operator">-</button>
-                        </div>
-                        <!-- salto -->
-                        <div class="buttons-row">
-                            <button class="btn-calc number">1</button>
-                            <button class="btn-calc number">2</button>
-                            <button class="btn-calc number">3</button>
-                            <button class="btn-calc operator">+</button>
-                        </div>
-                        <!-- salto -->
-                        <div class="buttons-row">
-                            <button class="btn-calc triple number">0</button>
-                            <button class="btn-calc result">=</button>
-                        </div>
-                    </section>
-                </div>
-            </article>
-            <div class="gradient"></div>
-            <article class="wordle two-columns">
-                <div class="article-intro">
-                    <h3>Time to Wordle</h3>
-                    <p>
-                        The idea of this game was learn how to fetch and post
-                        data to a remote server. The API that this game use is:
-                        <a
-                            href="https://words.dev-apis.com/word-of-the-day"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            words.dev-apis.com</a
-                        >
-                    </p>
-                    <i
-                        >If you are watching this in your mobile device, you
-                        won't be able to play the game yet.</i
-                    >
-                    <p>
-                        <a
-                            href="https://github.com/pabloppizarro/fm-intro-web-v3"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            ><span
-                                class="fa-brands fa-square-github"
-                                aria-hidden="true"
-                            ></span
-                            ><span class="sr-only">Github</span></a
-                        >
-                    </p>
-                </div>
-                <div class="article-content">
-                    <div class="status">
-                        <p class="status-text">⏳ Loading...</p>
-                    </div>
-                    <i
-                        >tip: after type your word, press "Enter" key to
-                        check.</i
-                    >
-                    <div class="scoreboard">
-                        <div class="scoreboard-letter" id="letter-0"></div>
-                        <div class="scoreboard-letter" id="letter-1"></div>
-                        <div class="scoreboard-letter" id="letter-2"></div>
-                        <div class="scoreboard-letter" id="letter-3"></div>
-                        <div class="scoreboard-letter" id="letter-4"></div>
-                        <div class="scoreboard-letter" id="letter-5"></div>
-                        <div class="scoreboard-letter" id="letter-6"></div>
-                        <div class="scoreboard-letter" id="letter-7"></div>
-                        <div class="scoreboard-letter" id="letter-8"></div>
-                        <div class="scoreboard-letter" id="letter-9"></div>
-                        <div class="scoreboard-letter" id="letter-10"></div>
-                        <div class="scoreboard-letter" id="letter-11"></div>
-                        <div class="scoreboard-letter" id="letter-12"></div>
-                        <div class="scoreboard-letter" id="letter-13"></div>
-                        <div class="scoreboard-letter" id="letter-14"></div>
-                        <div class="scoreboard-letter" id="letter-15"></div>
-                        <div class="scoreboard-letter" id="letter-16"></div>
-                        <div class="scoreboard-letter" id="letter-17"></div>
-                        <div class="scoreboard-letter" id="letter-18"></div>
-                        <div class="scoreboard-letter" id="letter-19"></div>
-                        <div class="scoreboard-letter" id="letter-20"></div>
-                        <div class="scoreboard-letter" id="letter-21"></div>
-                        <div class="scoreboard-letter" id="letter-22"></div>
-                        <div class="scoreboard-letter" id="letter-23"></div>
-                        <div class="scoreboard-letter" id="letter-24"></div>
-                        <div class="scoreboard-letter" id="letter-25"></div>
-                        <div class="scoreboard-letter" id="letter-26"></div>
-                        <div class="scoreboard-letter" id="letter-27"></div>
-                        <div class="scoreboard-letter" id="letter-28"></div>
-                        <div class="scoreboard-letter" id="letter-29"></div>
-                    </div>
-                </div>
-            </article>
-        </section>
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description"
+        content="Front End Developer. Angular 2+ | Also NodeJs, NestJs, MongoDB and MySQL. Curiosity is key. Mendoza 🍷 | ARG" />
+    <meta property="og:site_name" content="Pablo Pizarro Portfolio" />
+    <meta name="twitter:image:alt" content="Me at Mendoza downtown" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/acari-sans-neue" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1SKMZDZ0X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-        <!-- COMMON SECTIONS  -->
-        <div class="gradient"></div>
-        <div class="section-blue">
-            <section id="contact">
-                <h2>Contact me</h2>
-                <p>
-                    I'm always interested in hearing about new job opportunities
-                    around the world, new projects to work with o just talk
-                    about tech.
-                </p>
-                <p>
-                    <a href="mailto:pizarro.pablo@outlook.com" class="button">
-                        Email me
+        gtag("config", "G-W1SKMZDZ0X");
+    </script>
+</head>
+
+<body>
+    <!-- instructions in JavaScript block -->
+    <nav>
+        <ul>
+            <li>
+                <h1>
+                    <a href="index.html"><span class="fa-solid fa-code-compare" aria-hidden="true"></span>Pablo Pizarro
                     </a>
-                </p>
-                <p>pizarro.pablo@outlook.com</p>
-            </section>
-        </div>
-        <div class="gradient"></div>
-        <!-- instructions in JavaScript block -->
-        <footer>
-            <h3>Pablo Pizarro &middot; Front End Developer</h3>
-
-            <ul>
-                <li>
-                    <a
-                        href="https://www.linkedin.com/in/pablo-ppizarro/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        ><span
-                            class="fa-brands fa-linkedin"
-                            aria-hidden="true"
-                        ></span
-                        ><span class="sr-only"> LinkedIn</span></a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="https://github.com/pabloppizarro"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        ><span
-                            class="fa-brands fa-square-github"
-                            aria-hidden="true"
-                        ></span
-                        ><span class="sr-only">Github</span></a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="mailto:pizarro.pablo@outlook.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        ><span
-                            class="fa-solid fa-envelope"
-                            aria-hidden="true"
-                        ></span
-                        ><span class="sr-only">Email</span></a
-                    >
-                </li>
-            </ul>
+                </h1>
+            </li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="https://www.linkedin.com/in/pablo-ppizarro/" target="_blank" rel="noopener noreferrer"><span
+                        class="fa-brands fa-linkedin" aria-hidden="true"></span><span class="sr-only">
+                        LinkedIn</span></a>
+            </li>
+            <li>
+                <a href="https://github.com/pabloppizarro" target="_blank" rel="noopener noreferrer"><span
+                        class="fa-brands fa-square-github" aria-hidden="true"></span><span
+                        class="sr-only">Github</span></a>
+            </li>
+            <li>
+                <a href="https://drive.google.com/file/d/1j47Jl02aH05VKIMSIKMd1CzvszJLvhE7/view?usp=sharing"
+                    target="_blank" rel="noopener noreferrer" class="button">Resume</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Sectixs is identified by id cuz you could be able to navigate to a section using #-->
+    <section id="intro">
+        <h2>
+            Here I will post some code stuffs, learning progress or just
+            some thoughts.
+        </h2>
+    </section>
+    <div class="gradient"></div>
+    <section id="blog2" >
+        <article class="element section-blue"> 
+            <h3>JS calculator</h3>
             <p>
-                <small> &copy; 2023 Pablo Pizarro. All rights reserved.</small>
+                <a href="calculator/calculator.html" rel="noopener noreferrer"><span aria-hidden="true">Yeah, every
+                        frontend dev should code a JS
+                        calculator at least once
+                        🙃.</span><span class="sr-only">Navigate to project</span></a>
             </p>
-        </footer>
-        <script src="wordle/wordle.js"></script>
-        <script type="text/javascript" src="calculator/calculator.js"></script>
-    </body>
+        </article>
+        <article class="element section-blue">
+            <h3>Time to Wordle!</h3>
+            <p>
+                <a href="wordle/wordle.html" rel="noopener noreferrer"><span aria-hidden="true">The idea of this game
+                        was learn how to fetch and post
+                        data to a remote server.</span><span class="sr-only">Navigate to project</span></a>
+            </p>
+        </article>
+        <article class="element section-blue">
+            <h3>JS Quiz!</h3>
+            <p>
+                <a href="quiz/quiz.html" rel="noopener noreferrer"><span aria-hidden="true">We dont know JS.</span><span
+                        class="sr-only">Navigate to project</span></a>
+            </p>
+        </article>
+        <article class="element section-blue">
+            <h3>Guess the Doggo!</h3>
+            <p>
+                <a href="doggo-quiz/doggo-quiz.html" rel="noopener noreferrer"><span aria-hidden="true">I'm a cat person but...</span><span
+                        class="sr-only">Navigate to project</span></a>
+            </p>
+        </article>
+    </section>
+   
+    <!-- COMMON SECTIONS  -->
+    <div class="gradient"></div>
+    <div class="section-blue">
+        <section id="contact">
+            <h2>Contact me</h2>
+            <p>
+                I'm always interested in hearing about new job opportunities
+                around the world, new projects to work with o just talk
+                about tech.
+            </p>
+            <p>
+                <a href="mailto:pizarro.pablo@outlook.com" class="button">
+                    Email me
+                </a>
+            </p>
+            <p>pizarro.pablo@outlook.com</p>
+        </section>
+    </div>
+    <div class="gradient"></div>
+    <!-- instructions in JavaScript block -->
+    <footer>
+        <h3>Pablo Pizarro &middot; Front End Developer</h3>
+
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/pablo-ppizarro/" target="_blank" rel="noopener noreferrer"><span
+                        class="fa-brands fa-linkedin" aria-hidden="true"></span><span class="sr-only">
+                        LinkedIn</span></a>
+            </li>
+            <li>
+                <a href="https://github.com/pabloppizarro" target="_blank" rel="noopener noreferrer"><span
+                        class="fa-brands fa-square-github" aria-hidden="true"></span><span
+                        class="sr-only">Github</span></a>
+            </li>
+            <li>
+                <a href="mailto:pizarro.pablo@outlook.com" target="_blank" rel="noopener noreferrer"><span
+                        class="fa-solid fa-envelope" aria-hidden="true"></span><span class="sr-only">Email</span></a>
+            </li>
+        </ul>
+        <p>
+            <small> &copy; 2023 Pablo Pizarro. All rights reserved.</small>
+        </p>
+    </footer>
+</body>
+
 </html>
