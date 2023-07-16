@@ -1,6 +1,6 @@
     body {
       margin: 1rem auto;
-      padding: 3rem;
+      padding: 2rem;
     }
 
     header {
@@ -9,8 +9,6 @@
     }
 
     main {
-      min-width: 25rem;
-      max-width: 50%;
       margin: 0px auto;
       display: flex;
       flex-direction: column;
@@ -59,4 +57,28 @@
 
     .incorrect {
       background-color: lightpink;
+    }
+
+    .points {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .points p {
+      margin: 0;
+    }
+
+
+    @media (min-width: 800px) {
+      body {
+        padding: 3rem;
+      }
+
+      main {
+        min-width: 25rem;
+        max-width: 50%;
+
+      }
     }

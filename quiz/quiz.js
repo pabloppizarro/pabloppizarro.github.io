@@ -8,24 +8,39 @@
 const statement = document.getElementById("statement");
 const optionButtons = document.querySelectorAll("#options *")
 const nextButton = document.querySelector(".nextBtn")
+const pointsView = document.querySelector(".points")
+const explanation = document.getElementById("explanation");
 var factsIndex = 0;
+var points = 0;
+var finalResult = 0;
+
 // TODO 2: Declare & assign a variable called fact
 // Its value should be an object with a statement, true/false answer, and explanation
 const facts = [
   {
     statement: "[] == []",
     answer: false,
-    explanation: "If you pick true, study how non primitive vs primitive values are stored and how JS handle it."
+    explanation: "For non-primitive vars JS use reference over value and despite value references are unique."
   },
   {
-    statement: "pure functions in JS always return a value, and its depends of their environment",
+    statement: "A pure function in JS always return a value, and that value could change if the function is invoked many times",
     answer: false,
-    explanation: "they ALWAYS return the SAME value if you provides them with the same input."
+    explanation: "Pure function ALWAYS return the SAME value if you provides it with the same input."
   },
   {
-    statement: "const [] let me change their elements values?",
+    statement: "`const []` let me change their elements values?",
     answer: true,
     explanation: "yeah because objects in js are mutables, const wont let us to reassign that."
+  },
+  {
+    statement: "console.log(this) in a no-context place, what is gonna print? undefined/null?",
+    answer: false,
+    explanation: "It will print the globla or local context, could be *Window* object."
+  },
+  {
+    statement: "*High Order Function* is a built-in function provide by JS engine?  ",
+    answer: false,
+    explanation: "*High Order Function* is a function that return/recieve another function?"
   }
 
 ]
@@ -62,26 +77,35 @@ function isCorrect(guess, fact) {
 optionButtons.forEach(button => {
   button.addEventListener("click", (guessBtnEvent) => {
 
-    document.getElementById("explanation").innerHTML = `<p>${facts[factsIndex].explanation}</p>`;
+    explanation.innerHTML = `<p>${facts[factsIndex].explanation}</p>`;
     disableButtons(optionButtons);
     const match = isCorrect(guessBtnEvent.target.textContent, facts[factsIndex]);
     console.log(match);
+    calculateResult(match);
     guessBtnEvent.target.classList.add(match ? "correct" : "incorrect");
     enable(nextButton);
   })
 })
 nextButton.addEventListener("click", () => {
+
   factsIndex++;
-  resetBtnsStyles();
+  cleanView();
   if (factsIndex > facts.length - 1) {
     disable(nextButton);
     statement.textContent = "GAME FINISHED";
-    
+    pointsView.innerHTML = `<p>Final Points: ${points}</p>
+    <p>%${finalResult}</p>`;
   } else {
     enableButtons(optionButtons);
     setQuestion(facts[factsIndex])
   }
 })
+
+const calculateResult = match => {
+  if (match) points++;
+  finalResult = (points / facts.length) * 100;
+  return finalResult;
+}
 
 // TODO 7: Within the event handler function,
 // Use a for loop to disable all the option buttons
@@ -91,7 +115,9 @@ const disableButtons = (buttons) => {
 const enableButtons = (buttons) => {
   buttons.forEach(b => enable(b))
 }
-const resetBtnsStyles = () => {
+const cleanView = () => {
+  explanation.innerHTML = '';
+  points.innerHTML = '';
   optionButtons.forEach(btn => btn.classList = [])
 }
 
