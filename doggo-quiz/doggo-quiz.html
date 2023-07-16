@@ -39,18 +39,13 @@
     </script>
     <style>
         body {
-            /* margin: 1rem auto;
-            padding: 3rem; */
+            margin: 1rem auto;
+            padding: 2rem;
 
-        }
-
-        header {
-            width: 70%;
-            margin: 1em auto;
         }
 
         main {
-            max-width: 70%;
+
             margin: 0px auto;
             display: flex;
             flex-direction: column;
@@ -58,6 +53,10 @@
 
         img {
             max-width: 450px;
+        }
+
+        .api-link {
+            font-size: 1rem;
         }
 
         #image-frame {
@@ -95,6 +94,21 @@
         .hidden {
             display: none;
         }
+
+        @media (min-width: 800px) {
+            header {
+                width: 70%;
+                margin: 1rem auto;
+            }
+
+            main {
+                max-width: 70%;
+            }
+
+            .api-link {
+                font-size: 1.5rem;
+            }
+        }
     </style>
 </head>
 
@@ -108,7 +122,9 @@
         <h1>Guess the Doggo</h1>
         <h2>What breed is the dog in this image?</h2>
         <p>the idea of this project is to fetch data from a API and understand how async/await works.</p>
-        <p>api: <a href="https://dog.ceo/api/breeds/image/random">https://dog.ceo/api/breeds/image/random</a></p>
+        <p>api: </p>
+        <p class="api-link"><a
+                href="https://dog.ceo/api/breeds/image/random">https://dog.ceo/api/breeds/image/random</a></p>
 
     </header>
 
@@ -118,6 +134,8 @@
         <div id="options">
         </div>
         <i>reload to get a random doggo pic</i>
+
+        <!-- <button id="reload">Reload</button> -->
     </main>
 
 </body>
@@ -140,6 +158,8 @@
     function shuffleArray(array) {
         return array.sort((a, b) => Math.random() - 0.5);
     }
+
+    // document.getElementById('reload').addEventListener("click", initGame);
 
 
 
@@ -205,6 +225,10 @@
 
         const options = document.getElementById("options"); // Container for the multiple-choice buttons
 
+        for (let child of options.children) {
+            options.removeChild(child);
+        }
+
         // TODO 4
         // For each of the choices in choicesArray,
         // Create a button element whose name, value, and textContent properties are the value of that choice,
@@ -249,8 +273,13 @@
     // TODO 5
     // Asynchronously call the loadQuizData() function,
     // Then call renderQuiz() with the returned imageUrl, correctAnswer, and choices 
-    const [imageURL, correctAnswer, choices] = await loadQuizData()
-    renderQuiz(imageURL, correctAnswer, choices);
+    async function initGame() {
+        const [imageURL, correctAnswer, choices] = await loadQuizData()
+        renderQuiz(imageURL, correctAnswer, choices);
+    }
+
+    await initGame();
+
 
 </script>
 

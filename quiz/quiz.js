@@ -35,7 +35,7 @@ const facts = [
   {
     statement: "console.log(this) in a no-context place, what is gonna print? undefined/null?",
     answer: false,
-    explanation: "It will print the globla or local context, could be *Window* object."
+    explanation: "It will print the global or local context, could be *Window* object."
   },
   {
     statement: "*High Order Function* is a built-in function provide by JS engine?  ",
@@ -52,8 +52,8 @@ function setQuestion(fact) {
   disable(nextButton);
 }
 
+renderResult(false);
 setQuestion(facts[factsIndex])
-
 
 // TODO 4: Declare disable & enable functions to set or remove the "disabled" attribute from a given button element
 // disable(button) should set the button element's attribute "disabled" to the value ""
@@ -93,13 +93,24 @@ nextButton.addEventListener("click", () => {
   if (factsIndex > facts.length - 1) {
     disable(nextButton);
     statement.textContent = "GAME FINISHED";
-    pointsView.innerHTML = `<p>Final Points: ${points}</p>
-    <p>%${finalResult}</p>`;
+    renderResult(true);
   } else {
     enableButtons(optionButtons);
     setQuestion(facts[factsIndex])
   }
 })
+
+function renderResult(show) {
+  if (show) {
+    pointsView.removeAttribute('hidden');
+    pointsView.style.display = 'grid';
+    pointsView.innerHTML = `<p>Final Points: ${points}/ ${facts.length}</p>
+    <p>%${finalResult}</p>`;
+  } else {
+    pointsView.setAttribute('hidden', '')
+    pointsView.style.display = 'none';
+  }
+}
 
 const calculateResult = match => {
   if (match) points++;

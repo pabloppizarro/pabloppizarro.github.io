@@ -328,7 +328,7 @@ footer [class*="fa"] {
 #blog2 {
     display: grid;
     justify-items: center;
-    padding: 2rem 4rem;
+    padding: 2rem;
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
@@ -455,6 +455,7 @@ footer [class*="fa"] {
 
     #blog2 {
         margin: 0 15%;
+        padding: 2rem 4rem;
     }
 }
 
