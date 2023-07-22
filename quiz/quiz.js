@@ -49,6 +49,11 @@ const facts = [
     explanation: "Arrays are objects in JS"
   },
   {
+    statement: `<code>[1,2,3].hasOwnProperty('map')</code>`,
+    answer: false,
+    explanation: "map is not part of that array context, is part of __proto__ object inserted in that array : [1,2,3].__proto__.hasOwnProperty('map') = true"
+  },
+  {
     statement: `<code>setTimeout(() => console.log('Timeout 1'), 0);<br>Promise.resolve().then(() => console.log('Promise 1'));</code><br>'Timeout 1' will print first?`,
     answer: false,
     explanation: `In this case, promises take priority as they are stored in the Microtask Queue. 
