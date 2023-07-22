@@ -18,7 +18,7 @@ var finalResult = 0;
 // Its value should be an object with a statement, true/false answer, and explanation
 const facts = [
   {
-    statement: "[] == []",
+    statement: `<code>[] == []</code>`,
     answer: false,
     explanation: "For non-primitive vars JS use reference over value and despite value references are unique."
   },
@@ -28,19 +28,31 @@ const facts = [
     explanation: "Pure function ALWAYS return the SAME value if you provides it with the same input."
   },
   {
-    statement: "`const []` let me change their elements values?",
+    statement: `<code>"const []"</code> 
+    Can I reassign the value of the elements or just reassign them?`,
     answer: true,
-    explanation: "yeah because objects in js are mutables, const wont let us to reassign that."
+    explanation: "Yes, we can, as objects and arrays in JS are mutable. What we cannot do is reassign the 'const' variable itself, but we can modify its internal elements."
   },
   {
-    statement: "console.log(this) in a no-context place, what is gonna print? undefined/null?",
+    statement: `<code>console.log(this)</code>  in a no-context place, what is gonna print? undefined/null?`,
     answer: false,
     explanation: "It will print the global or local context, could be *Window* object."
   },
   {
     statement: "*High Order Function* is a built-in function provide by JS engine?  ",
     answer: false,
-    explanation: "*High Order Function* is a function that return/recieve another function?"
+    explanation: "*High Order Function* is any function that return/recieve another function?"
+  },
+  {
+    statement: `<code>typeof [] === 'object'</code>`,
+    answer: true,
+    explanation: "Arrays are objects in JS"
+  },
+  {
+    statement: `<code>setTimeout(() => console.log('Timeout 1'), 0);<br>Promise.resolve().then(() => console.log('Promise 1'));</code><br>'Timeout 1' will print first?`,
+    answer: false,
+    explanation: `In this case, promises take priority as they are stored in the Microtask Queue. 
+    setTimeout() is stored in the Callback Queue, which comes after. For more information, you can research the JavaScript Event Loop.`
   }
 
 ]
@@ -48,7 +60,7 @@ const facts = [
 
 // TODO 3: Set the text of the statement element to the fact's statement
 function setQuestion(fact) {
-  statement.textContent = fact.statement;
+  statement.innerHTML = fact.statement;
   disable(nextButton);
 }
 
@@ -92,7 +104,7 @@ nextButton.addEventListener("click", () => {
   cleanView();
   if (factsIndex > facts.length - 1) {
     disable(nextButton);
-    statement.textContent = "GAME FINISHED";
+    statement.innerHTML = "GAME FINISHED";
     renderResult(true);
   } else {
     enableButtons(optionButtons);
@@ -114,7 +126,7 @@ function renderResult(show) {
 
 const calculateResult = match => {
   if (match) points++;
-  finalResult = (points / facts.length) * 100;
+  finalResult = Math.floor((points / facts.length) * 100);
   return finalResult;
 }
 
