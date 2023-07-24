@@ -49,6 +49,18 @@ const facts = [
     explanation: "Arrays are objects in JS"
   },
   {
+    statement:
+    `Is this valid?? 
+    <code>function add2(num){
+      return num+2;
+    }
+    add2.score = 10;
+    console.log(add2.score) // ???
+    </code>`,
+    answer: true,
+    explanation: "Yeah! functions in JS are objects too. It will print 10"
+  },
+  {
     statement: `<code>[1,2,3].hasOwnProperty('map')</code>`,
     answer: false,
     explanation: "map is not part of that array context, is part of __proto__ object inserted in that array : [1,2,3].__proto__.hasOwnProperty('map') = true"
