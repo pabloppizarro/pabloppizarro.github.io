@@ -18,30 +18,36 @@ var finalResult = 0;
 // Its value should be an object with a statement, true/false answer, and explanation
 const facts = [
   {
+    statement: `In JavaScript, everything is an object.`,
+    answer: false,
+    explanation: `Most of the values could behave like an object, but no. 
+    <a href='https://262.ecma-international.org/9.0/#sec-ecmascript-language-types' target="_blank">Check JS SPEC about this. </a>`
+  },
+  {
     statement: `<code>[] == []</code>`,
     answer: false,
     explanation: "For non-primitive vars JS use reference over value and despite value references are unique."
   },
   {
-    statement: "A pure function in JS always return a value, and that value could change if the function is invoked many times",
+    statement: "In JS, a 'pure function' could return a different value if its environment changes or if it is invoked multiple times",
     answer: false,
     explanation: "Pure function ALWAYS return the SAME value if you provides it with the same input."
   },
   {
     statement: `<code>"const []"</code> 
-    Can I reassign the value of the elements or just reassign them?`,
+    Can I change the value of the elements or just reassign them?`,
     answer: true,
-    explanation: "Yes, we can, as objects and arrays in JS are mutable. What we cannot do is reassign the 'const' variable itself, but we can modify its internal elements."
+    explanation: "Yes, we can, as objects and arrays in JS are mutable. What we cannot do is reassign the 'const' variable itself, but we can modify their internal elements."
   },
   {
     statement: `<code>console.log(this)</code>  in a no-context place, what is gonna print? undefined/null?`,
     answer: false,
-    explanation: "It will print the global or local context, could be *Window* object."
+    explanation: "It will print the global memory context, could be *Window* object."
   },
   {
-    statement: "*High Order Function* is a built-in function provide by JS engine?  ",
+    statement: "*High Order Function* is a built-in function provide by JS engine? like 'map', 'reduce', etc.",
     answer: false,
-    explanation: "*High Order Function* is any function that return/recieve another function?"
+    explanation: "*High Order Function* is any function (built-in or made by us) that return/recieve another function?"
   },
   {
     statement: `<code>typeof [] === 'object'</code>`,
@@ -50,7 +56,7 @@ const facts = [
   },
   {
     statement:
-    `Is this valid?? 
+      `Is this valid?? 
     <code>function add2(num){
       return num+2;
     }
@@ -63,13 +69,13 @@ const facts = [
   {
     statement: `<code>[1,2,3].hasOwnProperty('map')</code>`,
     answer: false,
-    explanation: "map is not part of that array context, is part of __proto__ object inserted in that array : [1,2,3].__proto__.hasOwnProperty('map') = true"
+    explanation: "map is not part of that array context, is part of __proto__ object inserted in that array : [1,2,3].__proto__.hasOwnProperty('map') is true"
   },
   {
     statement: `<code>setTimeout(() => console.log('Timeout 1'), 0);<br>Promise.resolve().then(() => console.log('Promise 1'));</code><br>'Timeout 1' will print first?`,
     answer: false,
     explanation: `In this case, promises take priority as they are stored in the Microtask Queue. 
-    setTimeout() is stored in the Callback Queue, which comes after. For more information, you can research the JavaScript Event Loop.`
+    setTimeout() is stored in the Callback Queue, which comes after. For more information, you can research about the JavaScript Event Loop.`
   }
 
 ]
