@@ -161,6 +161,11 @@ nav [class*="fa-"]:hover {
     font-weight: bold;
 }
 
+.img-logo-header {
+    width: 30px;
+    margin-top: 3px;
+}
+
 .button {
     background-color: var(--yellow);
     color: var(--blue);
