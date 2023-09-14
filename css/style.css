@@ -1,23 +1,23 @@
 :root {
-    /* CSS VARIABLEs  */
-    --font-size: 1.3rem;
-    --white: white;
-    --blue-white: #f1f3f9;
-    --yellow: #ffc857;
-    --blue-light: #757da9;
-    --blue: #3f4464;
-    --blue-dark: #1f2232;
+  /* CSS VARIABLEs  */
+  --font-size: 1.3rem;
+  --white: white;
+  --blue-white: #f1f3f9;
+  --yellow: #ffc857;
+  --blue-light: #757da9;
+  --blue: #3f4464;
+  --blue-dark: #1f2232;
 
-    --acari-sans-regular: "AcariSansNeueRegular", sans-serif;
-    --acari-sans-light: "AcariSansNeueLight", sans-serif;
-    --acari-sans-extra-light: "AcariSansNeueExtraLight", sans-serif;
-    --acari-sans-extra-bold: "AcariSansNeueBold", sans-serif;
+  --acari-sans-regular: "AcariSansNeueRegular", sans-serif;
+  --acari-sans-light: "AcariSansNeueLight", sans-serif;
+  --acari-sans-extra-light: "AcariSansNeueExtraLight", sans-serif;
+  --acari-sans-extra-bold: "AcariSansNeueBold", sans-serif;
 }
 
 html {
-    font-weight: normal;
-    font-style: normal;
-    box-sizing: border-box;
+  font-weight: normal;
+  font-style: normal;
+  box-sizing: border-box;
 }
 
 /*UNIVERSAL SELECTOR, applies to every items on web, but he loses about specificity against a html element selector*/
@@ -25,443 +25,295 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    /* How to use vars in css*/
-    font-family: var(--acari-sans-regular);
-    background-color: var(--blue-dark);
-    color: var(--blue-white);
-    font-size: var(--font-size);
+  padding: 0;
+  margin: 0;
+  /* How to use vars in css*/
+  font-family: var(--acari-sans-regular);
+  background-color: var(--blue-dark);
+  color: var(--blue-white);
+  font-size: var(--font-size);
 }
 
 /*Margins vertical collapse, dont add, 1rem + 1rem = 1rem margin*/
 h1,
 h2,
 h3 {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    color: var(--yellow);
+  color: var(--yellow);
 }
 
 a:hover {
-    color: var(--white);
-    text-decoration: none;
-    font-family: var(--acari-sans-extra-bold);
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--acari-sans-extra-bold);
 }
 
 .gradient {
-    background: linear-gradient(141deg,
-            rgba(255, 200, 87, 1) 0%,
-            rgba(117, 125, 169, 1) 47%,
-            rgba(63, 68, 100, 1) 83%,
-            rgba(31, 34, 50, 1) 100%);
-    height: 2px;
+  background: linear-gradient(
+    141deg,
+    rgba(255, 200, 87, 1) 0%,
+    rgba(117, 125, 169, 1) 47%,
+    rgba(63, 68, 100, 1) 83%,
+    rgba(31, 34, 50, 1) 100%
+  );
+  height: 2px;
 }
 
 .section-blue {
-    background-color: var(--blue);
+  background-color: var(--blue);
 }
 
 .section-blue-light {
-    background-color: var(--blue-light);
+  background-color: var(--blue-light);
 }
 
 .section-blue-white {
-    background-color: var(--blue-white);
+  background-color: var(--blue-white);
 }
 
 .section-yellow {
-    background-color: var(--yellow);
+  background-color: var(--yellow);
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 /*navbar */
 nav {
-    font-family: var(--acari-sans-regular);
-    /*this % in fontsize helps to scale fonts when you have differents font elementes like "h1" and 'a' or 'p', it will reduce fontsize depends on native size.*/
-    font-size: 80%;
-    padding: 1rem;
+  font-family: var(--acari-sans-regular);
+  /*this % in fontsize helps to scale fonts when you have differents font elementes like "h1" and 'a' or 'p', it will reduce fontsize depends on native size.*/
+  font-size: 80%;
+  padding: 1rem;
 }
 
 nav .icon-name {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 nav h1 a {
-    font-family: var(--acari-sans-extra-light);
+  font-family: var(--acari-sans-extra-light);
 }
 
 nav h1 [class*="fa-"] {
-    font-size: 100%;
-    margin-right: 1rem;
+  font-size: 100%;
+  margin-right: 1rem;
 }
 
 nav h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-cropper {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 nav h1 img {
-    display: inline;
-    margin: 0 auto;
-    height: 110%;
-    object-fit: cover;
+  display: inline;
+  margin: 0 auto;
+  height: 110%;
+  object-fit: cover;
 }
 
 nav ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 nav li:first-child {
-    flex-basis: 100%;
-    text-align: center;
+  flex-basis: 100%;
+  text-align: center;
 }
 
 /*this searchs for values in attributes for this element, in this case is a 'class'*/
 nav [class*="fa-"] {
-    font-size: 125%;
-    color: var(--yellow);
+  font-size: 125%;
+  color: var(--yellow);
 }
 
 nav a {
-    color: var(--blue-white);
-    text-decoration: none;
-    display: block;
+  color: var(--blue-white);
+  text-decoration: none;
+  display: block;
 }
 
 nav a:hover,
 nav [class*="fa-"]:hover {
-    color: var(--white);
-    font-weight: bold;
+  color: var(--white);
+  font-weight: bold;
 }
 
 .img-logo-header {
-    width: 30px;
-    margin-top: 3px;
+  width: 30px;
+  margin-top: 3px;
 }
 
 .button {
-    background-color: var(--yellow);
-    color: var(--blue);
-    border-radius: 5px;
-    padding: 0.5rem;
-    font-family: var(--acari-sans-light);
-    text-decoration: none;
+  background-color: var(--yellow);
+  color: var(--blue);
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-family: var(--acari-sans-light);
+  text-decoration: none;
 }
 
 .button:hover {
-    color: var(--blue-dark);
-    background-color: var(--white);
+  color: var(--blue-dark);
+  background-color: var(--white);
 }
 
 /*intro styles*/
 
-#intro {
-    padding: 4rem 1rem 10rem 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-#intro p {
-    font-size: 1rem;
-    line-height: 1.5;
-    /*absolute valie, proportionaly from font-size rem choosen*/
-}
-
-#intro .name {
-    font-family: var(--acari-sans-extra-light);
-}
-
-.name span {
-    font-family: var(--acari-sans-regular);
-    font-size: 3rem;
-    display: block;
-    color: var(--yellow);
-}
-
-#intro h2 {
-    font-size: 2rem;
-    font-weight: normal;
-}
-
-/* --------- PROJECTS SECTIONS -----------*/
-#projects {
-    padding: 4rem 2rem;
-}
-
-#projects h2 {
-    font-size: 2.5rem;
-    margin-bottom: calc(2.5rem * 1.5);
-}
-
-#projects h3 {
-    color: var(--yellow);
-}
-
-#projects h4 {
-    margin: 0;
-    color: var(--blue-light);
-    font-size: 1rem;
-    font-family: var(--acari-sans-extra-light);
-}
-
-.description {
-    background-color: var(--blue-light);
-    padding: 1rem;
-    border-radius: 10px;
-    font-size: 1rem;
-    line-height: 1.2;
-}
-
-#projects ul {
-    padding: 0;
-    margin: 1rem 0;
-    list-style-type: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    gap: 1rem;
-    font-size: 1rem;
-}
-
-#projects ul li {
-    border: 1px solid var(--blue-white);
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-#projects img {
-    margin: 2rem 0 4rem 0;
-    padding: 1rem;
-    border-left: 1px solid var(--yellow);
-    border-top: 1px solid var(--yellow);
-    border-radius: 25px;
-}
-
-/*my approach*/
-#contact {
-    margin: 0 auto;
-    max-width: 400px;
-    text-align: center;
-    padding: 3rem 0;
-}
-
-/*Jen's approach*/
-/*Same as mee YEY!!, but she added the next line*/
-#contact p:last-child {
-    margin-top: 3rem;
-}
-
 #about {
-    text-align: center;
-    max-width: 1200px;
-    margin: 1rem auto;
-    padding: 1rem 0 4rem 0;
+  text-align: center;
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 1rem 0 4rem 0;
 }
 
 #about img {
-    max-width: 300px;
-    border-radius: 1rem;
+  max-width: 300px;
+  border-radius: 1rem;
 }
 
 #about ul {
-    padding: 0;
-    margin: 1rem 0;
-    list-style-type: none;
-    gap: 1rem;
-    font-size: 1rem;
-    font-family: var(--acari-sans-extra-light);
+  padding: 0;
+  margin: 1rem 0;
+  list-style-type: none;
+  gap: 1rem;
+  font-size: 1rem;
+  font-family: var(--acari-sans-extra-light);
 }
 
 #about .brief {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 footer {
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 4rem 0;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 0;
 }
 
 footer ul {
-    margin: 2rem 0;
-    padding: 0;
-    gap: 3rem;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 2rem 0;
+  padding: 0;
+  gap: 3rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer [class*="fa"] {
-    font-size: 200%;
+  font-size: 200%;
 }
 
 #blog article {
-    padding: 2rem 0 4rem;
-    gap: 3rem;
+  padding: 2rem 0 4rem;
+  gap: 3rem;
 }
 
 #blog2 {
-    display: grid;
-    text-align: center;
-    margin-bottom: 2rem;
-    padding: 2rem;
-    gap: 2%;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-
+  display: grid;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  gap: 2%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 #blog2 article {
-
-    padding: 1rem;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    min-height: 130px;
-    align-items: center;
-    justify-content: center;
-    display: grid;
+  padding: 1rem;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  min-height: 130px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
 }
 
 #blog2 article:hover {
-    z-index: 9;
-    box-shadow: 9px 15px 15px 3px rgba(0, 0, 0, 0.1);
+  z-index: 9;
+  box-shadow: 9px 15px 15px 3px rgba(0, 0, 0, 0.1);
 }
 
 .two-columns {
-    display: grid;
-    justify-items: center;
-    align-items: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 .article-intro {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .wordle .article-content {
-    background-color: var(--blue-white);
-    color: black;
-    border-radius: 1rem;
+  background-color: var(--blue-white);
+  color: black;
+  border-radius: 1rem;
 }
 
 .status i {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 @media (min-width: 800px) {
-    nav {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
-    nav li:first-child {
-        flex-basis: auto;
-        text-align: left;
-        margin-right: auto;
-    }
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
 
-    /*GRID PUEDE HACER OVERLAP DE ELEMENTS  Y TRABAJA EN 2 DIMENSIONES, FLEXBOX NO PUEDE HACER OVERLAP, SOLO PUEDE JUNTAR Y DEJAR PEGADOS ELEMENTOS*/
-    .name span {
-        font-size: 3rem;
-    }
+  /*GRID PUEDE HACER OVERLAP DE ELEMENTS  Y TRABAJA EN 2 DIMENSIONES, FLEXBOX NO PUEDE HACER OVERLAP, SOLO PUEDE JUNTAR Y DEJAR PEGADOS ELEMENTOS*/
+  .name span {
+    font-size: 3rem;
+  }
 
-    #intro h2 {
-        font-size: 4rem;
-    }
+  #about ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    #intro p {
-        font-size: 1.5rem;
-        line-height: 1.5;
-        /*absolute valie, proportionaly from font-size rem choosen*/
-    }
+  .two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
 
-    #projects article {
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        gap: 1rem;
-    }
-
-    .text {
-        order: 2;
-        text-align: right;
-        grid-column: 5/11;
-        grid-row: 1/2;
-    }
-
-    #projects {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    #projects img {
-        grid-column: 1/6;
-        grid-row: 1/2;
-    }
-
-    #projects ul {
-        justify-content: flex-end;
-    }
-
-    #projects .reverse .text {
-        order: 2;
-        text-align: left;
-        grid-column: 1/7;
-    }
-
-    #projects .reverse ul {
-        justify-content: flex-start;
-    }
-
-    #projects .reverse img {
-        grid-column: 6/11;
-        grid-row: 1/2;
-    }
-
-    #about ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .two-columns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        align-items: center;
-    }
-
-    #blog2 {
-        margin: 0 15%;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
-    }
+  #blog2 {
+    margin: 0 15%;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
 }
 
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+}
