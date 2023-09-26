@@ -1,4 +1,11 @@
 import initCanvasArt from "../js/art.js";
+import { carousel } from "../js/banner.js";
+
+var IMAGES = [
+  "./assets/imgs/mendoza/mendoza_0_s4egmr/mendoza_0_s4egmr_c_scale,w_811.jpg",
+  "./assets/imgs/mendoza/main-mendoza_jfuf3k/main-mendoza_jfuf3k_c_scale,w_814.jpg",
+  "./assets/imgs/mendoza/Bodega-Andeluna-1_ug4kcy/Bodega-Andeluna-1_ug4kcy_c_scale,w_743.jpg",
+];
 
 export class LandingPage extends HTMLElement {
   constructor() {
@@ -15,6 +22,9 @@ export class LandingPage extends HTMLElement {
     //Inyectamos el nuevo componente en el DOM
     this.root.appendChild(content);
     initCanvasArt(this.root);
+
+    const carouselContainer = this.root.getElementById("carousel");
+    carousel(document, carouselContainer, IMAGES, 3000);
   }
 }
 

@@ -72,7 +72,9 @@ a {
   background-repeat: no-repeat;
   transition: background-size 400ms;
 }
-
+p span {
+  color: var(--yellow);
+}
 a:hover {
   color: var(--white);
   text-decoration: none;
@@ -321,3 +323,16 @@ footer [class*="fa"] {
 
 @media (min-width: 550px) {
 }
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.fade-in-image { animation: fadeIn 1s; }
+.fade-out-image { animation: fadeOut 1s; }

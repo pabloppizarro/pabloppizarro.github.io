@@ -1,7 +1,7 @@
 import Router from "./router.js";
 
 //Link Web Componentes
-import { LandingPage } from "./landing/LandingPage.js";
+import { LandingPage } from "./Landing/LandingPage.js";
 //****** */
 
 var options = {
