@@ -1,30 +1,62 @@
 @import "../css/base.css";
+
 #intro {
-  padding: 4rem 1rem 10rem 1rem;
+  padding: 4rem 1rem 2rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
 #intro p {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 2rem;
+  /* line-height: 1.5; */
   /*absolute valie, proportionaly from font-size rem choosen*/
 }
 
 #intro .name {
-  font-family: var(--font-light);
+  font-size: 3rem;
 }
 
 .name span {
-  font-family: var(--font-regular);
-  font-size: 3rem;
-  display: block;
   color: var(--yellow);
 }
 
 #intro h2 {
+  /* font-size: 2rem;
+  font-weight: normal; */
+}
+.me-photo {
+  position: relative;
+}
+.me-photo img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.location .images img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.about {
+  display: grid;
+}
+#intro .about p {
   font-size: 2rem;
-  font-weight: normal;
+  color: var(--blue-white);
+  grid-row: 1/1;
+  grid-column: 1/1;
+}
+.art {
+  grid-row: 1/1;
+  grid-column: 1/1;
+}
+.art canvas {
+  cursor: pointer;
+  color: var(--blue-light);
 }
 
 /* --------- PROJECTS SECTIONS -----------*/
@@ -99,12 +131,6 @@
 @media (min-width: 800px) {
   #intro h2 {
     font-size: 4rem;
-  }
-
-  #intro p {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    /*absolute valie, proportionaly from font-size rem choosen*/
   }
 
   #projects article {

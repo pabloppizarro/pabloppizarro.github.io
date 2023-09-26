@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pablo Pizarro | Front End Web Developer</title>
+    <title>Pablo Pizarro | Full Stack Web Developer</title>
     <meta
       name="description"
       content="Front End Developer. Angular 2+ | Also NodeJs, NestJs, MongoDB and MySQL. Curiosity is key. Mendoza 🍷 | ARG"
@@ -28,7 +28,7 @@
     <!--  Non-Essential, But Recommended -->
     <meta
       property="og:description"
-      content="Front End Developer. Angular 2+ | Also NodeJs, NestJs, MongoDB and MySQL. Curiosity is key. Mendoza 🍷 | ARG"
+      content="Full Stack Developer. JavaScript | TypeScript. Also NodeJs, NestJs, MongoDB and MySQL. Curiosity is key. Mendoza 🍷 | ARG"
     />
     <meta property="og:site_name" content="Pablo Pizarro Portfolio" />
     <meta name="twitter:image:alt" content="Me at Mendoza downtown" />
@@ -66,21 +66,15 @@
       <nav>
         <ul>
           <li class="icon-name">
-            <div class="image-cropper">
-              <img
-                src="https://res.cloudinary.com/gamehard/image/upload/f_auto,q_auto/uth3arud3tpcmhygkydo"
-                alt="me in a warm weekday morning"
-              />
-            </div>
             <h1>
-              <a href="index.html"> Pablo Pizarro </a>
+              <a href="index.html">pachu.dev</a>
             </h1>
           </li>
           <li><a href="index.html#projects">Projects</a></li>
           <!-- <li><a href="blog.html">Blog</a></li> -->
           <!-- <li><a href="about.html">About</a></li> -->
           <!-- <li><a href="#contact">Contact</a></li> -->
-          <li>
+          <!-- <li>
             <a
               href="https://www.linkedin.com/in/pablo-ppizarro/"
               target="_blank"
@@ -129,29 +123,72 @@
               ></span
               ><span class="sr-only">Github</span></a
             >
-          </li>
+          </li> -->
           <li>
             <a
               href="https://drive.google.com/file/d/1j47Jl02aH05VKIMSIKMd1CzvszJLvhE7/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              class="button"
               >Resume</a
             >
           </li>
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="test"></div>
+    </main>
 
     <!-- Web Pages Componentes -->
     <template id="landing-page-template">
-      <section id="intro">
-        <p class="name">Hello👋🏽, my name is <span> Pablo Pizarro </span></p>
-        <h2>
-          Front End developer from the beautiful city of Mendoza🍷, Argentina.
-        </h2>
-        <p>
+      <section id="intro" class="test">
+        <article class="me">
+          <h2 class="name">
+            From vanilla JS to the most modern development stacks
+            <span>Pablo Pizarro (aka pachu)</span> is a web oriented developer
+            who aims to create, design and implements solutions.
+          </h2>
+        </article>
+        <article class="me-photo">
+          <img
+            sizes="(max-width: 1400px) 100vw, 1400px"
+            srcset="
+              ./assets/imgs/me/me_zrplda_c_scale,w_200.avif   200w,
+              ./assets/imgs/me/me_zrplda_c_scale,w_899.avif   899w,
+              ./assets/imgs/me/me_zrplda_c_scale,w_1400.avif 1400w
+            "
+            src="./assets/imgs/me/me_zrplda_c_scale,w_1400.avif"
+            alt="me in a warm weekday morning with a white naruto t-shirt"
+          />
+        </article>
+        <article class="location">
+          <p>
+            Based in the beautiful City of Mendoza, Argentina. The wine capital.
+          </p>
+          <div class="images">
+            <img
+              sizes="(max-width: 1200px) 100vw, 1200px"
+              srcset="
+                ./assets/imgs/mendoza/mendoza_0_s4egmr/mendoza_0_s4egmr_c_scale,w_200.jpg   200w,
+                ./assets/imgs/mendoza/mendoza_0_s4egmr/mendoza_0_s4egmr_c_scale,w_811.jpg   811w,
+                ./assets/imgs/mendoza/mendoza_0_s4egmr/mendoza_0_s4egmr_c_scale,w_1200.jpg 1200w
+              "
+              src="./assets/imgs/mendoza/mendoza_0_s4egmr/mendoza_0_s4egmr_c_scale,w_1200.jpg"
+              alt=""
+            />
+          </div>
+        </article>
+        <article class="about">
+          <p>
+            I have almost 4 years of commercial experience in web development,
+            where I have collaborated with exceptional developers and built
+            software solutions for companies in Argentina and Chile.
+          </p>
+          <div class="art">
+            <canvas id="c"></canvas>
+          </div>
+        </article>
+        <!-- <p>
           I have 3.5 years of commercial experience in web development, where I
           have collaborated with exceptional developers and built software
           solutions for companies in Argentina and Chile.
@@ -165,9 +202,9 @@
             rel="noopener noreferrer"
             >Frontend Masters platform</a
           >.
-        </p>
+        </p> -->
       </section>
-      <div class="gradient"></div>
+      <p class="separator">⚽ ⭐⭐⭐ ⚽</p>
       <!-- <section id="projects">
         <h2>Projects I'm proud of</h2>
         <article>
@@ -297,7 +334,6 @@
           />
         </article>
       </section> -->
-      <div class="gradient"></div>
       <!-- <div class="section-blue">
         <section id="contact">
           <h2>Contact me</h2>
@@ -317,7 +353,6 @@
 
     <!-- Sections is identified by id cuz you could be able to navigate to a section using #-->
 
-    <div class="gradient"></div>
     <!-- instructions in JavaScript block -->
     <footer>
       <h3>Pablo Pizarro &middot; Front End Developer</h3>

@@ -27,6 +27,7 @@ const Router = {
     let pageElement = null;
     switch (route) {
       case "/":
+      case "/index.html":
         pageElement = document.createElement("landing-page");
         break;
 

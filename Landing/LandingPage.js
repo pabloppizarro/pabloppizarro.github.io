@@ -1,3 +1,5 @@
+import initCanvasArt from "../js/art.js";
+
 export class LandingPage extends HTMLElement {
   constructor() {
     super();
@@ -12,6 +14,7 @@ export class LandingPage extends HTMLElement {
     const content = template.content.cloneNode(true);
     //Inyectamos el nuevo componente en el DOM
     this.root.appendChild(content);
+    initCanvasArt(this.root);
   }
 }
 
