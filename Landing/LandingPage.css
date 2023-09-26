@@ -1,3 +1,4 @@
+@import "../css/base.css";
 #intro {
   padding: 4rem 1rem 10rem 1rem;
   max-width: 1200px;
@@ -11,11 +12,11 @@
 }
 
 #intro .name {
-  font-family: var(--acari-sans-extra-light);
+  font-family: var(--font-light);
 }
 
 .name span {
-  font-family: var(--acari-sans-regular);
+  font-family: var(--font-regular);
   font-size: 3rem;
   display: block;
   color: var(--yellow);
@@ -44,7 +45,7 @@
   margin: 0;
   color: var(--blue-light);
   font-size: 1rem;
-  font-family: var(--acari-sans-extra-light);
+  font-family: var(--font-light);
 }
 
 .description {
