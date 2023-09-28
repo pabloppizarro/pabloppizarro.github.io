@@ -137,7 +137,6 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -289,6 +288,9 @@ footer [class*="fa"] {
   nav {
     max-width: 1200px;
     margin: 0 auto;
+  }
+  nav ul {
+    flex-flow: row wrap;
   }
 
   nav li:first-child {
