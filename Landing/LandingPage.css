@@ -1,0 +1,229 @@
+@import "../css/base.css";
+
+#intro {
+  padding: 4rem 1rem 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+#intro p {
+  font-size: 2rem;
+  /* line-height: 1.5; */
+  /*absolute valie, proportionaly from font-size rem choosen*/
+}
+
+#intro .name {
+  font-size: 3rem;
+}
+
+.name span {
+  color: var(--yellow);
+}
+
+#intro h2 {
+  /* font-size: 2rem;
+  font-weight: normal; */
+}
+.me-photo {
+  position: relative;
+}
+.me-photo img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.location .images {
+  max-height: 350px;
+}
+.location .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.carousel-img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  max-height: 300px;
+}
+
+.me {
+  display: grid;
+}
+#intro .me h2 {
+  grid-row: 1/1;
+  grid-column: 1/1;
+}
+.art {
+  grid-row: 1/1;
+  grid-column: 1/1;
+}
+.art canvas {
+  cursor: pointer;
+  color: var(--blue-light);
+}
+
+/* --------- PROJECTS SECTIONS -----------*/
+#projects {
+  padding: 4rem 2rem;
+}
+
+#projects h2 {
+  /* font-size: 2.5rem; */
+  /* margin-bottom: calc(2.5rem * 1.5); */
+}
+
+#projects h3 {
+  color: var(--yellow);
+}
+
+#projects h4 {
+  margin: 0;
+  color: var(--blue-light);
+  font-size: 1rem;
+  font-family: var(--font-light);
+}
+
+.description {
+  background-color: var(--blue-light);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+#projects ul {
+  padding: 0;
+  margin: 1rem 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+#projects ul li {
+  border: 1px solid var(--blue-white);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#projects img {
+  margin: 2rem 0 4rem 0;
+  padding: 1rem;
+  /* border-left: 3px solid var(--yellow);
+  border-top: 3px solid var(--yellow); */
+  border-radius: 25px;
+}
+
+#learning {
+  padding: 0rem 2rem;
+}
+
+#learning .articles {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+#learning .articles article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/*my approach*/
+#contact {
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+/*Jen's approach*/
+/*Same as mee YEY!!, but she added the next line*/
+#contact p:last-child {
+  margin-top: 3rem;
+}
+
+@media (min-width: 800px) {
+  #intro {
+    grid-template-columns: 1fr 1fr;
+  }
+  #intro h2 {
+    font-size: 4rem;
+  }
+
+  #projects article {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+  }
+
+  .text {
+    order: 2;
+    text-align: right;
+    grid-column: 5/11;
+    grid-row: 1/2;
+  }
+
+  #projects,
+  #learning {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #projects img {
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+
+  #projects ul {
+    justify-content: flex-end;
+  }
+
+  #projects .reverse .text {
+    order: 2;
+    text-align: left;
+    grid-column: 1/7;
+  }
+
+  #projects .reverse ul {
+    justify-content: flex-start;
+  }
+
+  #projects .reverse img {
+    grid-column: 6/11;
+    grid-row: 1/2;
+  }
+  #learning {
+    padding: 4rem 2rem;
+    display: grid;
+    gap: 1rem;
+  }
+
+  #learning .articles {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    /* width: 80%; */
+    /* text-align: left; */
+  }
+  #learning .articles article img {
+    max-height: 240px;
+    min-width: 275px;
+  }
+  #learning .articles * {
+    /* color: var(--blue-white); */
+  }
+  #learning a:hover {
+    /* color: var(--yellow); */
+  }
+}

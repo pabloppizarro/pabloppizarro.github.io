@@ -1,0 +1,338 @@
+:root {
+  /* CSS VARIABLEs  */
+  --font-size: 1.3rem;
+  --white: white;
+  --blue-white: #f1f3f9;
+  --yellow: #ffc857;
+  --blue-light: #757da9;
+  --blue: #3f4464;
+  --blue-dark: #1f2232;
+  --black-dark: #151718;
+  --font-regular: PoppinsRegular, sans-serif, monospace;
+  --font-light: PoppinsLight, sans-serif, monospace;
+  --font-bold: PoppinsBold, sans-serif, monospace;
+}
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: PoppinsLight;
+  src: url(../assets/fonts/Poppins-Light.ttf);
+}
+
+html {
+  font-weight: normal;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+/*UNIVERSAL SELECTOR, applies to every items on web, but he loses about specificity against a html element selector*/
+/*Is very is easy to override*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: var(--font-regular);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='33' height='33' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(90)'%3E%3Crect width='100%25' height='100%25' fill='rgba(21, 23, 24,1)'/%3E%3Ccircle cx='0' cy='20' r='1.5' fill='rgba(31, 34, 50,1)'/%3E%3Ccircle cx='40' cy='20' r='1.5' fill='rgba(31, 34, 50,1)'/%3E%3Cpath d='m 19.5 19.5 h1 v1 h-1z' fill='rgba(117, 125, 169,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+  background-color: var(--black-dark);
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+  color: var(--blue-white);
+  font-size: var(--font-size);
+}
+
+/*Margins vertical collapse, dont add, 1rem + 1rem = 1rem margin*/
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: var(--yellow);
+  background: linear-gradient(to right, var(--yellow), var(--yellow)),
+    linear-gradient(to right, var(--blue), var(--blue-light), var(--blue-white));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+p span {
+  color: var(--yellow);
+}
+a:hover {
+  color: var(--white);
+  text-decoration: none;
+  /* font-family: var(--font-bold); */
+}
+a:hover,
+a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+img {
+  width: 100%;
+}
+
+/*navbar */
+nav {
+  font-family: var(--font-regular);
+  /*this % in fontsize helps to scale fonts when you have differents font elementes like "h1" and 'a' or 'p', it will reduce fontsize depends on native size.*/
+  font-size: 80%;
+  padding: 1rem;
+}
+
+nav .icon-name {
+  display: flex;
+  gap: 1rem;
+}
+
+nav h1 a {
+  font-family: var(--font-light);
+}
+
+nav h1 [class*="fa-"] {
+  font-size: 100%;
+  margin-right: 1rem;
+}
+
+nav h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-cropper {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+nav h1 img {
+  display: inline;
+  margin: 0 auto;
+  height: 110%;
+  object-fit: cover;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+/*this searchs for values in attributes for this element, in this case is a 'class'*/
+nav [class*="fa-"] {
+  font-size: 125%;
+  color: var(--yellow);
+}
+
+nav a {
+  color: var(--blue-white);
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover,
+nav [class*="fa-"]:hover {
+  color: var(--white);
+  /* font-weight: bold; */
+}
+.separator {
+  text-align: center;
+}
+
+.img-logo-header {
+  width: 30px;
+  margin-top: 3px;
+}
+
+.yellow-fill-button {
+  background-color: var(--yellow);
+  color: var(--blue);
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-family: var(--font-regular);
+  text-decoration: none;
+}
+
+.yellow-fill-button:hover {
+  color: var(--blue-dark);
+  background-color: var(--white);
+}
+
+/*intro styles*/
+
+/* #about {
+  text-align: center;
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 1rem 0 4rem 0;
+}
+
+#about img {
+  max-width: 300px;
+  border-radius: 1rem;
+}
+
+#about ul {
+  padding: 0;
+  margin: 1rem 0;
+  list-style-type: none;
+  gap: 1rem;
+  font-size: 1rem;
+  font-family: var(--font-light);
+}
+
+#about .brief {
+  padding: 1rem;
+} */
+
+footer {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+footer ul {
+  margin: 2rem 0;
+  padding: 0;
+  gap: 3rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer [class*="fa"] {
+  font-size: 200%;
+}
+
+/* #blog article {
+  padding: 2rem 0 4rem;
+  gap: 3rem;
+}
+
+#blog2 {
+  display: grid;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  gap: 2%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+#blog2 article {
+  padding: 1rem;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  min-height: 130px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+}
+
+#blog2 article:hover {
+  z-index: 9;
+  box-shadow: 9px 15px 15px 3px rgba(0, 0, 0, 0.1);
+} */
+
+.two-columns {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.article-intro {
+  padding: 2rem;
+}
+
+.wordle .article-content {
+  background-color: var(--blue-white);
+  color: black;
+  border-radius: 1rem;
+}
+
+.status i {
+  font-size: 1rem;
+}
+
+@media (min-width: 800px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+
+  /*GRID PUEDE HACER OVERLAP DE ELEMENTS  Y TRABAJA EN 2 DIMENSIONES, FLEXBOX NO PUEDE HACER OVERLAP, SOLO PUEDE JUNTAR Y DEJAR PEGADOS ELEMENTOS*/
+  /* .name span {
+    font-size: 3rem;
+  }
+
+  #about ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #blog2 {
+    margin: 0 15%;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  } */
+}
+
+@media (min-width: 550px) {
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.fade-in-image { animation: fadeIn 1s; }
+.fade-out-image { animation: fadeOut 1s; }
