@@ -21,7 +21,7 @@ export class LandingPage extends HTMLElement {
     const content = template.content.cloneNode(true);
     //Inyectamos el nuevo componente en el DOM
     this.root.appendChild(content);
-    initCanvasArt(this.root);
+    // initCanvasArt(this.root);
 
     const carouselContainer = this.root.getElementById("carousel");
     carousel(document, carouselContainer, IMAGES, 3000);

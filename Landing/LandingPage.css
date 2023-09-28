@@ -5,7 +5,7 @@
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
 
@@ -35,7 +35,7 @@
   object-fit: cover;
   border-radius: 1rem;
 }
-.location .images{
+.location .images {
   max-height: 350px;
 }
 .location .images img {
@@ -44,7 +44,7 @@
   object-fit: cover;
   border-radius: 1rem;
 }
-.carousel-img{
+.carousel-img {
   width: 100%;
   max-height: 100%;
   object-fit: cover;
@@ -52,12 +52,10 @@
   max-height: 300px;
 }
 
-.about {
+.me {
   display: grid;
 }
-#intro .about p {
-  font-size: 2rem;
-  color: var(--blue-white);
+#intro .me h2 {
   grid-row: 1/1;
   grid-column: 1/1;
 }
@@ -76,8 +74,8 @@
 }
 
 #projects h2 {
-  font-size: 2.5rem;
-  margin-bottom: calc(2.5rem * 1.5);
+  /* font-size: 2.5rem; */
+  /* margin-bottom: calc(2.5rem * 1.5); */
 }
 
 #projects h3 {
@@ -120,9 +118,25 @@
 #projects img {
   margin: 2rem 0 4rem 0;
   padding: 1rem;
-  border-left: 1px solid var(--yellow);
-  border-top: 1px solid var(--yellow);
+  /* border-left: 3px solid var(--yellow);
+  border-top: 3px solid var(--yellow); */
   border-radius: 25px;
+}
+
+#learning {
+  padding: 0rem 2rem;
+}
+
+#learning .articles {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+#learning .articles article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
 }
 
 /*my approach*/
@@ -140,6 +154,9 @@
 }
 
 @media (min-width: 800px) {
+  #intro {
+    grid-template-columns: 1fr 1fr;
+  }
   #intro h2 {
     font-size: 4rem;
   }
@@ -157,7 +174,8 @@
     grid-row: 1/2;
   }
 
-  #projects {
+  #projects,
+  #learning {
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -184,5 +202,28 @@
   #projects .reverse img {
     grid-column: 6/11;
     grid-row: 1/2;
+  }
+  #learning {
+    padding: 4rem 2rem;
+    display: grid;
+    gap: 1rem;
+  }
+
+  #learning .articles {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    /* width: 80%; */
+    /* text-align: left; */
+  }
+  #learning .articles article img {
+    max-height: 240px;
+    min-width: 275px;
+  }
+  #learning .articles * {
+    /* color: var(--blue-white); */
+  }
+  #learning a:hover {
+    /* color: var(--yellow); */
   }
 }
