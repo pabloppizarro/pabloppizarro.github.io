@@ -1,7 +1,11 @@
 @import "../css/base.css";
 
+#section {
+  margin: 2rem 0;
+}
+
 #intro {
-  padding: 4rem 1rem 2rem 1rem;
+  padding: 4rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -16,7 +20,7 @@
 }
 
 #intro .name {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .name span {
@@ -27,14 +31,45 @@
   /* font-size: 2rem;
   font-weight: normal; */
 }
+.me {
+  align-items: center;
+}
 .me-photo {
   position: relative;
+  text-align: center;
 }
 .me-photo img {
   height: 100%;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 100%;
+  max-width: 300px;
 }
+#badges {
+  display: grid;
+  gap: 1rem;
+  padding: 4rem 0;
+}
+
+.badges {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.badges img {
+  max-width: 100%;
+  height: auto;
+}
+.badges a:hover {
+  filter: brightness(1.25);
+}
+#more {
+  padding: 4rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
 .location .images {
   max-height: 350px;
 }
@@ -165,6 +200,9 @@
     grid-template-columns: repeat(10, 1fr);
     gap: 1rem;
   }
+  #more {
+    grid-template-columns: 1fr 1fr;
+  }
 
   .text {
     order: 2;
@@ -187,7 +225,6 @@
     margin: 2rem 0 4rem 0;
     padding: 1rem;
   }
-
 
   #projects ul {
     justify-content: flex-end;
