@@ -43,6 +43,7 @@
   object-fit: cover;
   border-radius: 100%;
   max-width: 300px;
+  max-height: 300px;
 }
 #badges {
   display: grid;
